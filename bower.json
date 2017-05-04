@@ -1,0 +1,23 @@
+{
+  "name": "heavy-drive.com",
+  "homepage": "https://github.com/HeavyDrive/heavy-drive.com",
+  "authors": [
+    "Heavy-Drive"
+  ],
+  "description": "Location de voiture de luxe",
+  "main": "",
+  "license": "proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "foundation": "^5.5.3",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
