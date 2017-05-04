@@ -1,15 +1,49 @@
-/web/bundles/
-/app/bootstrap.php.cache
-/app/cache/*
-/app/config/parameters.yml
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-/app/phpunit.xml
-/build/
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+Thumbs.db
+
+# NPM packages folder.
+node_modules/
+
+web/bundles/
+web/js/
+app/config/parameters.yml
+app/bootstrap.php.cache
+app/SymfonyRequirements.php
+app/cache/*
+app/logs/*
+app/cache/.gitkeep
+!/app/logs/.gitkeep
+bin/*
+bin/phpunit
 /vendor/
-/bin/
-/composer.phar
+/features/
+.php_cs.cache
+.idea/*
+
+# Brunch folder for temporary files.
+tmp/
+
+# Brunch output folder.
+public/
+
+Supprimerait .idea/
 
 # frontend deps
 /bower_components
@@ -18,4 +52,9 @@
 npm-debug.log
 npm-debug.log.*
 
-.idea/
+# created by brunch
+web/javascripts/
+web/styles/
+web/fonts/
+web/imgages/
+
