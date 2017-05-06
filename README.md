@@ -1,16 +1,54 @@
-# Brunch app
+# heavy-drive.com
 
-This is a HTML5 application, built with [Brunch](http://brunch.io).
+Cahier des charges techniques 
+- Symfony 2.8
+- Npm
+- Brunch
 
-## Getting started
-* Install (if you don't have them):
-    * [Node.js](http://nodejs.org): `brew install node` on OS X
-    * [Brunch](http://brunch.io): `npm install -g brunch`
-    * Brunch plugins and app dependencies: `npm install`
-* Run:
-    * `npm start` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `npm run build` — builds minified project for production
-* Learn:
-    * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
-    * Place static files you want to be copied from `app/assets/` to `public/`.
-    * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
+Installation du projet
+
+Requis : 
+
+- Apache
+- PHP > 5.5
+- MySQL > 5.7
+- npm > 3.10
+
+<h4>Installation <h4>
+
+```html
+Vérifier config apache 
+sudo /etc/init.d/apache2 status
+install apache
+apt-get install apache2
+install php
+sudo apt-get install php <package>
+install Mysql-server
+sudo apt-get install mysql-server
+install npm
+sudo apt install npm
+```
+
+
+<h4>Mise en place du projet</h4> 
+
+
+```html
+Création d'un dossier "heavy" dans www
+sudo mkdir heavy
+Aller à la racine du dossier heavy
+cd /var/www/heavy
+Cloner le projet et configurer git
+git clone https://github.com/HeavyDrive/heavy-drive.com.git
+MAJ des dépendances et installation des vendors
+sudo composer install et suivre les directions
+Brunch et bower 
+bower install
+brunch build ou brunch watch
+Lancer le serveur
+php app/console server:run ou php app/console server:run 127.0.01:80
+```
+
+
+
+
