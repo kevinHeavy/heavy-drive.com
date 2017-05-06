@@ -43,7 +43,8 @@ git clone https://github.com/HeavyDrive/heavy-drive.com.git
 MAJ des dépendances et installation des vendors
 sudo composer install et suivre les directions
 Brunch et bower 
-bower install
+npm install bower
+npm install brunch
 brunch build ou brunch watch
 Lancer le serveur
 php app/console server:run ou php app/console server:run 127.0.01:80
