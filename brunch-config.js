@@ -22,6 +22,9 @@ exports.config = {
                     /backend/,
                 ],
                 "styles/vendor.css": [
+                    "bower_components/normalize.css/normalize.css",
+                    "bower_components/bootstrap-saas/aanimate.css",
+                    "bower_components/bootstrap-saas/assets"
                 ]
             }
         }
@@ -35,7 +38,11 @@ exports.config = {
     },
     plugins: {
         sass: {
-            mode: 'ruby'
+            mode: 'ruby',
+            options: {
+                includePaths: ["node_modules/bootstrap-sass/assets/stylesheets"], // tell sass-brunch where to look for files to @import
+                precision: 8 // minimum precision required by bootstrap-sass
+            }
         },
         cleancss: {
             keepSpecialComments: 0,
