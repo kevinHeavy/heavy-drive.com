@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="heavy-drive.com.bootstrap" default="bootstrap" basedir=".">
+    <target name="bootstrap">
+        <exec executable="php">
+            <arg line="composer.phar install --no-dev --no-progress --prefer-dist" />
+        </exec>
+    </target>
+</project>

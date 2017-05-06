@@ -2,9 +2,9 @@ app_frontend:
     resource: '@AppBundle/Controller/Frontend'
     type: annotation
 
-app_backend:
-    resource: '@AppBundle/Controller/Backend'
-    type: annotation
+#app_backend:
+ #   resource: '@AppBundle/Controller/Backend'
+  #  type: annotation
 
 # Admin
 admin:
