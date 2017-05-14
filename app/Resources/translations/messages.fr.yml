@@ -1,0 +1,40 @@
+heavy:
+    website:
+        name: Heavy-Drive
+        phone:
+        email: contact@heavy-drive.com
+        slogan: Heavy-Drive | Le Luxe à Portée de Mains
+    header:
+        logout:
+        register:
+        login:
+        username: Bienvenue %fullname%
+        account: Mon compte
+    navigation:
+        homepage: Accueil
+        cars: Nos véhicules
+        services : Nos services
+        wedding: Mariage
+    homepage:
+        welcome: Bienvenue !
+        about_us: |
+                              <h2>Heavy-Drive est une entreprise familiale qui a pour vocation de louer et de fournir des services de transports hauts de gammes.</h2>
+                              <p class="m-bottom">
+                              L'idée est de démocratiser auprès d'un maximum de populations les différentes prestations de prestige en pratiquant des tarifications abordables, tout en conservant une qualité de service optimale. Chez Heavy-Drive, votre bien-être ainsi que la qualité de service est notre priorité.<br>
+                              Nos tarifs sont des plus concurrentiels et notre dévouement envers notre clientèle est total.<strong>Heavy-Drive</strong> vous accompagne et vous conseille dans le choix de votre véhicule. D'autres prestations telles que <a href="#" >"Heavy-Drive Me"</a> (Chauffeur privé) vous seront également proposées par notre équipe à des tarifs toujours compétitifs. <br>
+                              Qu'il s'agisse d'un accompagnement à l'aéroport, d'un retour à domicile en fin de soirée, ou encore d'un service de Grande Remise pour un mariage ou un événement particulier, Heavy-Drive est la solution à vos besoins. Avec Heavy-Drive, sentez-vous bien, sentez-vous libre...
+                              </p>
+        our_expertise: Notre expertise
+    footer:
+        title: Heavy Drive vous remercie de votre conficance
+        subtitle: A votre dispotion
+        cookie_message: En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour vous proposer des offres ciblées adaptées à vos centres d’intérêts et réaliser des statistiques de visites.
+        cookie_accept_label: J'ai compris
+        search_bar:
+        placeholder: Rechercher une référence
+        cgv_title: Conditions Générales de Vente
+        terms_title: Mentions légales du site
+        get_started: Démarrer
+        about_us: A propos de nous
+        support: support
+        copyright: © 2017 Copyright Heavy-Drive

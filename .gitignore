@@ -56,5 +56,6 @@ npm-debug.log.*
 web/javascripts/
 web/styles/
 web/fonts/
-web/imgages/
+web/images/
+web/video
 

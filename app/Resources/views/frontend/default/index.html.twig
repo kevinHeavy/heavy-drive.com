@@ -1,58 +1,61 @@
 {% extends 'frontend/base.html.twig' %}
 
 {% block body %}
-
-    <body class="body">
-    <div>
-        {{ include('frontend/navbar.html.twig')  }}<!-- header navbar -->
-    </div>
-    <div class="row">
+    <div class="container">
         <div class="header-container">
             <div class="video-container">
-                <video preload="auto" autoplay="true" loop="loop" muted="muted" poster="{{ asset('images/Logo-HeavyDrive.jpg') }}">
+                <video preload="auto" autoplay="true" loop="loop" muted="muted" poster="{{ asset('images/logohd.ico') }}">
                     <source src="{{ asset('video/Vidéo_de_heavy') }}" type="video/mp4">
                 </video>
-                <div class="slogan"><h3>Heavy-Drive | Le Luxe à Portée de Mains</h3></div>
+                <div class="slogan">
+                    <h3>{{ 'heavy.website.slogan'|trans }}</h3>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="content-section">
-            <h1>Bienvenue !</h1>
-            <h2>Heavy-Drive est une entreprise familiale qui a pour vocation de louer et de fournir des services de transports hauts de gammes.</h2>
-            <p>L'idée est de démocratiser auprès d'un maximum de populations les différentes prestations de prestige en pratiquant des tarifications abordables, tout en conservant une qualité de service optimale. Chez Heavy-Drive, votre bien-être ainsi que la qualité de service est notre priorité. Nos tarifs sont des plus concurrentiels et notre dévouement envers notre clientèle est total.
-
-                <strong>Heavy-Drive</strong> vous accompagne et vous conseille dans le choix de votre véhicule. D'autres prestations telles que <a href="#" >"Heavy-Drive Me"</a> (Chauffeur privé) vous seront également proposées par notre équipe à des tarifs toujours compétitifs. Qu'il s'agisse d'un accompagnement à l'aéroport, d'un retour à domicile en fin de soirée, ou encore d'un service de Grande Remise pour un mariage ou un événement particulier, Heavy-Drive est la solution à vos besoins. Avec Heavy-Drive, sentez-vous bien, sentez-vous libre...</p>
+            <h1>{{ 'heavy.homepage.welcome'|trans }}</h1>
+            {{ 'heavy.homepage.about_us'|trans|raw }}
         </div>
-    </div>
-    <div class="row">
-        <div classs="col-lg-6">
+        <hr>
+        <div id="services" class="container-fluid text-center">
+            <h2>{{ 'heavy.homepage.our_expertise'| trans }}</h2>
+            <br>
             <div class="row slideanim">
-                <div class="col-lg-3">
-                    <span id="glyphicon" class="glyphicon glyphicon-user"></span>
+                <div class="col-sm-4">
                     <h4>Proximité avec le client</h4>
+                    <span class="glyphicon glyphicon-user logo-small"></span>
+                    <p>Lorem ipsum dolor sit amet..</p>
                 </div>
-                <div class="col-lg-3">
-                    <span id="glyphicon" class="glyphicon glyphicon-road "></span>
+                <div class="col-sm-4">
+                    <h4>Satisfaction client</h4>
+                    <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>rapport qualité/prix</h4>
+                    <span class="glyphicon glyphicon-eur logo-small"></span>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row slideanim">
+                <div class="col-sm-4">
                     <h4>Kilométrage illimité</h4>
-                    <p></p>
+                    <span class="glyphicon glyphicon-road logo-small"></span>
+                    <p>Lorem ipsum dolor sit amet..</p>
                 </div>
-                <div class="col-lg-3">
-                    <span id="glyphicon" class="glyphicon glyphicon-eur"></span>
-                    <h4 style="color:#303030;">rapport qualité/prix</h4>
-                    <p></p>
+                <div class="col-sm-4">
+                    <h4>Expertise</h4>
+                    <span class="glyphicon glyphicon-wrench logo-small"></span>
+                    <p>Lorem ipsum dolor sit amet..</p>
                 </div>
-
-                <div class="col-lg-3">
-                    <span id="glyphicon" class="glyphicon glyphicon-wrench logo"></span>
-                    <h4 style="color:#303030;">Expertise</h4>
-                    <p></p>
+                <div class="col-sm-4">
+                    <h4>Confiance</h4>
+                    <span class="glyphicon glyphicon-ok logo-small"></span>
+                    <p>Lorem ipsum dolor sit amet..</p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    </body>
 {% endblock %}
+

@@ -1,7 +1,7 @@
 // See http://brunch.io for documentation.
 exports.config = {
     paths: {
-        watched: ["app/Resources/frontend/", "app/Resources/backend/"],
+        watched: ["app/Resources/frontend/", "app/Resources/backend/", "bower_components"],
         public: "web"
     },
     files: {
@@ -12,7 +12,6 @@ exports.config = {
                     /backend/
                 ],
                 "javascripts/vendor.js": /^bower/,
-
             }
         },
         stylesheets: {
@@ -22,9 +21,10 @@ exports.config = {
                     /backend/,
                 ],
                 "styles/vendor.css": [
-                    "bower_components/normalize.css/normalize.css",
-                    "bower_components/bootstrap-saas/aanimate.css",
-                    "bower_components/bootstrap-saas/assets"
+                    "bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
+                    "bower_components/bootstrap/dist/css/bootstrap.min.css",
+                    "bower_components/components-font-awesome/font-awesome.min.css",
+                    "bower_components/bootstrap-social/bootstrap-social.css"
                 ]
             }
         }
@@ -39,10 +39,6 @@ exports.config = {
     plugins: {
         sass: {
             mode: 'ruby',
-            options: {
-                includePaths: ["node_modules/bootstrap-sass/assets/stylesheets"], // tell sass-brunch where to look for files to @import
-                precision: 8 // minimum precision required by bootstrap-sass
-            }
         },
         cleancss: {
             keepSpecialComments: 0,
