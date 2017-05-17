@@ -5,6 +5,8 @@ heavy:
         email: contact@heavy-drive.com
         slogan: Heavy-Drive | Le Luxe à Portée de Mains
     header:
+        heavy: HEAVY
+        drive: DRIVE
         logout:
         register:
         login:
