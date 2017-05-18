@@ -24,7 +24,7 @@ exports.config = {
                     "bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
                     "bower_components/bootstrap/dist/css/bootstrap.min.css",
                     "bower_components/components-font-awesome/font-awesome.min.css",
-                    "bower_components/bootstrap-social/bootstrap-social.css"
+                    //"bower_components/bootstrap-social/bootstrap-social.css"
                 ]
             }
         }

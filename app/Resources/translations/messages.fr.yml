@@ -5,6 +5,8 @@ heavy:
         email: contact@heavy-drive.com
         slogan: Heavy-Drive | Le Luxe à Portée de Mains
     header:
+        heavy: HEAVY
+        drive: DRIVE
         logout:
         register:
         login:
@@ -15,6 +17,10 @@ heavy:
         cars: Nos véhicules
         services : Nos services
         wedding: Mariage
+    cars:
+        selection: Notre Sélection
+
+
     homepage:
         welcome: Bienvenue !
         about_us: |
