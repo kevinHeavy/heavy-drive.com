@@ -25,8 +25,18 @@ heavy:
                               Qu'il s'agisse d'un accompagnement à l'aéroport, d'un retour à domicile en fin de soirée, ou encore d'un service de Grande Remise pour un mariage ou un événement particulier, Heavy-Drive est la solution à vos besoins. Avec Heavy-Drive, sentez-vous bien, sentez-vous libre...
                               </p>
         our_expertise: Notre expertise
+    service:
+        title: Nos préstations
+        forfaitchrono: Forfait CHRONO 24H
+        forfaitchronocomment: Le temps d'une journée, savourez le plaisir de conduire le véhicule de votre choix et bénéficiez de tout le confort Heavy-Drive... Prise en charge du véhicule pour 24 heures entre 07H00 et 10H00 ou de 13H00 à 15H00. Retour le lendemain sur même plage horaire
+        forfaitweekend: Forfait WEEK-END
+        forfaitweekendcomment: Optez pour la sérénité le temps d'un week-end
+        forfaitweek: Forfait BIEN-ÊTRE
+        forfaitweekcomment: Optez pour la sérénité le temps d'une semaine à bord de l'un de nos véhicules suréquipés et confortables
+        kilometrage: Kilométrage illimité
+        reserver: réserver
     footer:
-        title: Heavy Drive vous remercie de votre conficance
+        title: Heavy Drive vous remercie de votre confiance
         subtitle: A votre dispotion
         cookie_message: En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour vous proposer des offres ciblées adaptées à vos centres d’intérêts et réaliser des statistiques de visites.
         cookie_accept_label: J'ai compris
