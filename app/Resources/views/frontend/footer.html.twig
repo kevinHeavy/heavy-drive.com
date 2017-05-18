@@ -15,8 +15,8 @@
                         <div class="col-sm-4 text-center">
                             <h3>{{ 'heavy.footer.get_started'|trans }}</h3>
                             <ul>
-                                <li><a href="#">Accueil</a></li>
-                                <li><a href="#">vehicule</a></li>
+                                <li><a href="{{ path('homepage') }}">Accueil</a></li>
+                                <li><a href="{{ path('car') }}">vehicule</a></li>
                                 <li><a href="#">Qui sommes nous</a></li>
                                 <li><a href="#">Gallerie</a></li>
                             </ul>
@@ -25,15 +25,15 @@
                             <h3>{{ 'heavy.footer.about_us'|trans }}</h3>
                             <ul>
                                 <li><a href="#">L'entreprise</a></li>
-                                <li><a href="#">Nos véhicules</a></li>
-                                <li><a href="#">Nos services</a></li>
+                                <li><a href="{{ path('car') }}">Nos véhicules</a></li>
+                                <li><a href="{{ path('service') }}">Nos services</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4 text-center">
                             <h3>{{ 'heavy.footer.support'|trans }}</h3>
                             <ul>
                                 <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Contactez nous</a></li>
+                                <li><a href="{{ path('contact') }}">Contactez nous</a></li>
                                 <li><a href="#">Forums</a></li>
                             </ul>
                         </div>

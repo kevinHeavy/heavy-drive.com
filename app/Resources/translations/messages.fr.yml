@@ -27,6 +27,8 @@ heavy:
         email: contact@heavy-drive.com
         slogan: Heavy-Drive | Le Luxe à Portée de Mains
     header:
+        heavy: HEAVY
+        drive: DRIVE
         logout:
         register:
         login:
@@ -37,6 +39,10 @@ heavy:
         cars: Nos véhicules
         services : Nos services
         wedding: Mariage
+    cars:
+        selection: Notre Sélection
+
+
     homepage:
         welcome: Bienvenue !
         about_us: |
@@ -48,6 +54,7 @@ heavy:
                               </p>
         our_expertise: Notre expertise
     service:
+        title: Nos préstations
         forfaitchrono: Forfait CHRONO 24H
         forfaitchronocomment: Le temps d'une journée, savourez le plaisir de conduire le véhicule de votre choix et bénéficiez de tout le confort Heavy-Drive... Prise en charge du véhicule pour 24 heures entre 07H00 et 10H00 ou de 13H00 à 15H00. Retour le lendemain sur même plage horaire
         forfaitweekend: Forfait WEEK-END
@@ -57,7 +64,7 @@ heavy:
         kilometrage: Kilométrage illimité
         reserver: réserver
     footer:
-        title: Heavy Drive vous remercie de votre conficance
+        title: Heavy Drive vous remercie de votre confiance
         subtitle: A votre dispotion
         cookie_message: En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour vous proposer des offres ciblées adaptées à vos centres d’intérêts et réaliser des statistiques de visites.
         cookie_accept_label: J'ai compris
