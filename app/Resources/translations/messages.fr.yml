@@ -1,4 +1,26 @@
 heavy:
+    register:
+        description: Créer votre compte Heavy-Drive!
+        firstname: Prénom*
+        lastname: Nom*
+        gender: Sexe*
+        male: Masculin
+        female: Féminin
+        city: Ville*
+        mail: Adresse mail*
+        mailexample: Example: john.smith@gmail.com
+        password: Mot de passe*
+        writepassword: Saississez le mot de passe
+        rewritepassword: Confirmez le mot de passe
+        signup: S'inscrire
+    connection:
+        description: Connectez-vous à votre compte Heavy-Drive!
+        mail: Adresse Mail
+        password: Mot de passe
+        forgotpassword: Mot de passe oublié ?
+        connection: Connexion
+        register: Inscription
+
     website:
         name: Heavy-Drive
         phone:
