@@ -1,0 +1,7 @@
+{% extends "frontend/base.html.twig" %}
+{% block body %}
+<div class="container">
+    <h1 id="title">{{ 'heavy.cars.selection'|trans }}</h1>
+{{ include ('frontend/car/list__cars.html.twig') }}
+</div>
+{% endblock %}
