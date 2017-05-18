@@ -1,4 +1,26 @@
 heavy:
+    register:
+        description: Créer votre compte Heavy-Drive!
+        firstname: Prénom*
+        lastname: Nom*
+        gender: Sexe*
+        male: Masculin
+        female: Féminin
+        city: Ville*
+        mail: Adresse mail*
+        mailexample: Example: john.smith@gmail.com
+        password: Mot de passe*
+        writepassword: Saississez le mot de passe
+        rewritepassword: Confirmez le mot de passe
+        signup: S'inscrire
+    connection:
+        description: Connectez-vous à votre compte Heavy-Drive!
+        mail: Adresse Mail
+        password: Mot de passe
+        forgotpassword: Mot de passe oublié ?
+        connection: Connexion
+        register: Inscription
+
     website:
         name: Heavy-Drive
         phone:
@@ -25,6 +47,15 @@ heavy:
                               Qu'il s'agisse d'un accompagnement à l'aéroport, d'un retour à domicile en fin de soirée, ou encore d'un service de Grande Remise pour un mariage ou un événement particulier, Heavy-Drive est la solution à vos besoins. Avec Heavy-Drive, sentez-vous bien, sentez-vous libre...
                               </p>
         our_expertise: Notre expertise
+    service:
+        forfaitchrono: Forfait CHRONO 24H
+        forfaitchronocomment: Le temps d'une journée, savourez le plaisir de conduire le véhicule de votre choix et bénéficiez de tout le confort Heavy-Drive... Prise en charge du véhicule pour 24 heures entre 07H00 et 10H00 ou de 13H00 à 15H00. Retour le lendemain sur même plage horaire
+        forfaitweekend: Forfait WEEK-END
+        forfaitweekendcomment: Optez pour la sérénité le temps d'un week-end
+        forfaitweek: Forfait BIEN-ÊTRE
+        forfaitweekcomment: Optez pour la sérénité le temps d'une semaine à bord de l'un de nos véhicules suréquipés et confortables
+        kilometrage: Kilométrage illimité
+        reserver: réserver
     footer:
         title: Heavy Drive vous remercie de votre conficance
         subtitle: A votre dispotion
