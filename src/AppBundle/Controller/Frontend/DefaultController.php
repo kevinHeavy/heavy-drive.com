@@ -21,4 +21,13 @@ class DefaultController extends Controller
     {
         return $this->render('frontend/default/index.html.twig', []);
     }
+
+    /**
+     * @Route("/contact", name="contact")
+     *
+     */
+    public function contactAction()
+    {
+        return $this->render('frontend/default/contact.html.twig');
+    }
 }
