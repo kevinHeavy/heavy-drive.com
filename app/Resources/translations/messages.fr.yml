@@ -17,6 +17,10 @@ heavy:
         cars: Nos véhicules
         services : Nos services
         wedding: Mariage
+    cars:
+        selection: Notre Sélection
+
+
     homepage:
         welcome: Bienvenue !
         about_us: |
