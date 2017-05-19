@@ -9,12 +9,12 @@
   border-right: none;
   border-left: none;
   //position: relative;
-  padding: 20px;
+  //padding: 20px;
 
 }
 .video-container{
   position: absolute;
-  top: -12%;
+  //top: -12%;
   left: 0%;
   height: 100%;
   width: 100%;
@@ -91,4 +91,8 @@ video{
   font-weight: 400;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+}
+
+#_navigation {
+  margin-bottom: 0%;
 }
