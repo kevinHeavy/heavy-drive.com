@@ -11,7 +11,13 @@ exports.config = {
                 "javascripts/back.js": [
                     /backend/
                 ],
-                "javascripts/vendor.js": /^bower/,
+                "javascripts/vendor.js": [
+                    /^bower/,
+                    "bower_components/jquery/dist/jquery.min.js",
+                    "bower_components/bootstrap-sass/assets/javascripts/bootstrap/*",
+                    "bower_components/bootstrap-sass/assets/javascripts/bootstrap.js",
+                    "bower_components/bootstrap/js/*"
+                ]
             }
         },
         stylesheets: {
