@@ -1,0 +1,97 @@
+header.carousel {
+  height: 50%;
+}
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+  height: 100%;
+}
+header.carousel .fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+#carousel-example-generic{
+  margin-left: 30%;
+}
+.bs-five-area.bs-radius{
+  border-radius: 30px;
+  text-align: center;
+}
+.bs-five-area .bs-five{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  transition: all 0.4s;
+  padding:20px 0px;
+}
+.bs-five-area .bs-five h6{
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.bs-five-area .bs-five h1{
+  font-size:64px;
+  font-weight: 100;
+  line-height: 72px;
+}
+.bs-five-area .bs-five h1 sup{
+  font-size:30px;
+  top:-30px;
+}
+.bs-five-area .bs-five ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.bs-five-area .bs-five ul li{
+  line-height: 45px;
+  border-bottom:0px;
+}
+.bs-five-area .bs-five:hover{
+  background: #179880;
+  transition: all 0.4s;
+}
+.bs-five-area .bs-five.active {
+  background: #179880;
+  background: -webkit-linear-gradient(left, #179880 , #21A476);
+  background: -o-linear-gradient(right, #179880, #21A476);
+  background: -moz-linear-gradient(right, #179880, #21A476);
+  background: linear-gradient(to right, #179880 , #21A476);
+}
+.bs-five-area .bs-five .btn-success{
+  padding: 10px 50px;
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #179880;
+  border-color: #21A476;
+}
+.bs-five-area .bs-five.active .btn.btn-success,
+.bs-five-area .bs-five:hover.bs-five .btn.btn-success{
+  background: #E0FFF6 ;
+  color:#444 ;
+}
+.bs-five-area .bs-five.active,
+.bs-five-area .bs-five.active ul li,
+.bs-five-area .bs-five:hover.bs-five,
+.bs-five-area .bs-five:hover.bs-five ul li
+{
+  color:#fff;
+}
+#tit{
+  text-align: center;
+  color: #3a526b;
+}
+.clickable{
+  cursor: pointer;
+}
+.panel-heading span {
+  margin-top: -20px;
+  font-size: 15px;
+}
+#d{
+  margin-left: 3px;
+}
+#c{
+  font-size: x-large;
+}
