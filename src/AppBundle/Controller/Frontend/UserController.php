@@ -26,4 +26,22 @@ class UserController extends Controller{
 
         return $this->render('frontend/user/connection.html.twig', []);
     }
+    /**
+     * @Route("/compte", name="compte")
+     *
+     */
+    public function CompteAction()
+    {
+
+        return $this->render('frontend/user/compte.html.twig', []);
+    }
+    /**
+     * @Route("/compte/historique", name="historique")
+     *
+     */
+    public function HistoryAction()
+    {
+
+        return $this->render('frontend/user/historique.html.twig', []);
+    }
 }
