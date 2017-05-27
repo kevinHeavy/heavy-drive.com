@@ -21,7 +21,6 @@ heavy:
         connection: Connexion
         register: Inscription
         deconnexion: Se déconnecter
-
     account:
         name: Name example
         information: Mes coordonnées
@@ -35,13 +34,6 @@ heavy:
         date: Date
         price: Prix
         status: Status
-
-
-
-
-
-
-
     website:
         name: Heavy-Drive
         phone:
@@ -62,8 +54,6 @@ heavy:
         wedding: Mariage
     cars:
         selection: Notre Sélection
-
-
     homepage:
         welcome: Bienvenue !
         about_us: |
