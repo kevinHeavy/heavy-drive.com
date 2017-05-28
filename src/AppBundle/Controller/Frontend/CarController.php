@@ -17,4 +17,11 @@ class CarController extends Controller
     {
         return $this->render('frontend/car/show.html.twig');
     }
+    /**
+     * @Route("/details", name="details")
+     */
+    public function detailsAction()
+    {
+        return $this->render('frontend/car/details.html.twig');
+    }
 }
