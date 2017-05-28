@@ -1,32 +1,31 @@
-<div class="row">
-    <nav class="navbar navbar-inverse navbar" id="_navigation">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ path('homepage') }}"><img src="{{ asset('images/logohd.ico') }}" width="20px" class="img-responsive"></a></li>
-                <li><a href="{{ path('homepage') }}">{{ 'heavy.navigation.homepage'|trans }}</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="{{ path('car') }}">{{ 'heavy.navigation.cars'|trans }}<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Porshe Cayman</a></li>
-                        <li><a href="#">Mercedes ML 63 AMG</a></li>
-                        <li><a href="#">Jaguar </a></li>
-                        <li><a href="#">Range Rover Evoque </a></li>
-                        <li><a href="#">Mini Cooper S </a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="{{ path('service') }}">{{ 'heavy.navigation.services'|trans }}<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Location chrono</a></li>
-                        <li><a href="#">Location Bien-être</a></li>
-                        <li><a href="#">Heavy Drive Me </a></li>
-                        <li><a href="#">Livraison possible </a></li>
-                    </ul>
-                </li>
-                <li><a href="#">{{ 'heavy.navigation.wedding'|trans }}</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ path('Registration') }}"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
-                <li><a href="{{ path('connection') }}"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
+<nav class="navbar navbar-inverse navbar">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="{{ path('homepage') }}"><img src="{{ asset('images/logohd.ico') }}" width="20px" class="img-responsive"></a></li>
+            <li><a href="{{ path('homepage') }}">{{ 'heavy.navigation.homepage'|trans }}</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="{{ path('car') }}">{{ 'heavy.navigation.cars'|trans }}<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Porshe Cayman</a></li>
+                    <li><a href="#">Mercedes ML 63 AMG</a></li>
+                    <li><a href="#">Jaguar </a></li>
+                    <li><a href="#">Range Rover Evoque </a></li>
+                    <li><a href="#">Mini Cooper S </a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="{{ path('service') }}">{{ 'heavy.navigation.services'|trans }}<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Location chrono</a></li>
+                    <li><a href="#">Location Bien-être</a></li>
+                    <li><a href="#">Heavy Drive Me </a></li>
+                    <li><a href="#">Livraison possible </a></li>
+                </ul>
+            </li>
+            <li><a href="#">{{ 'heavy.navigation.wedding'|trans }}</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ path('Registration') }}"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
+            <li><a href="{{ path('connection') }}"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+        </ul>
+    </div>
+</nav>
+
