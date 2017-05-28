@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="Ashley (generated)" id="1">
+        <createTable tableName="car">
+            <column name="id" remarks="(DC2Type:guid)" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pick_up_origin_id" type="INT"/>
+            <column name="uuid" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="registration" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_registration_at" type="datetime"/>
+            <column name="status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pick_up_status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pick_up_done_at" type="datetime"/>
+            <column name="vehicle_type" type="INT"/>
+            <column name="vehicle_energy_type" type="INT"/>
+            <column name="vehicle_maker" type="VARCHAR(255)"/>
+            <column name="vehicle_cnit" type="VARCHAR(255)"/>
+            <column name="vehicle_model" type="VARCHAR(255)"/>
+            <column name="vehicle_model_variant" type="VARCHAR(255)"/>
+            <column name="vehicle_engine" type="VARCHAR(255)"/>
+            <column name="first_hand" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="duplicate_keys" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="interior_color" type="VARCHAR(255)"/>
+            <column name="exterior_color" type="VARCHAR(255)"/>
+            <column name="passenger_capacity" type="INT"/>
+            <column name="doors" type="INT"/>
+            <column name="transmission" type="VARCHAR(255)"/>
+            <column name="mileage_real" type="INT"/>
+            <column name="mileage_estimate" type="INT"/>
+            <column name="last_maintenance_mileage" type="INT"/>
+            <column name="chassis_jig" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="repainted" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="options" remarks="(DC2Type:json_array)" type="LONGTEXT"/>
+            <column name="pictures" remarks="(DC2Type:json_array)" type="LONGTEXT"/>
+            <column name="created_at" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="datetime"/>
+            <column name="comments" type="LONGTEXT"/>
+            <column name="enabled" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="2">
+        <createTable tableName="agency">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="siret" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tva_number" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="billing_address" type="VARCHAR(255)"/>
+            <column name="billing_zip_code" type="VARCHAR(255)"/>
+            <column name="billing_city" type="VARCHAR(255)"/>
+            <column name="billing_country" type="VARCHAR(255)"/>
+            <column name="enabled" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pick_up_agency_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="3">
+        <createTable tableName="pick_up_center">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zip_code" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="full_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="opening_hours" type="LONGTEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enabled" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="4">
+        <createTable tableName="partnair">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zip_code" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="full_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enabled" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="agency_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="5">
+        <createTable tableName="service">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enabled" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="datetime"/>
+            <column name="description" type="LONGTEXT"/>
+            <column name="agency_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="6">
+        <createTable tableName="client">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="username" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="username_canonical" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email_canonical" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enabled" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="salt" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_login" type="datetime"/>
+            <column name="locked" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expired" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expires_at" type="datetime"/>
+            <column name="confirmation_token" type="VARCHAR(255)"/>
+            <column name="password_requested_at" type="datetime"/>
+            <column name="roles" remarks="(DC2Type:array)" type="LONGTEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="credentials_expired" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="credentials_expire_at" type="datetime"/>
+            <column name="title" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mobile_phone" type="VARCHAR(255)"/>
+            <column name="allow_emails" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="allow_sms" type="TINYINT(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="7">
+        <createTable tableName="price">
+            <column name="service_id" type="INT"/>
+            <column name="car_id" type="INT"/>
+            <column name="to_pay" type="DECIMAL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="8">
+        <addUniqueConstraint columnNames="uuid" constraintName="UNIQ_773DE69DD17F50A6" tableName="car"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="9">
+        <addUniqueConstraint columnNames="username_canonical" constraintName="UNIQ_C744045592FC23A8" tableName="client"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="10">
+        <addUniqueConstraint columnNames="email_canonical" constraintName="UNIQ_C7440455A0D96FBF" tableName="client"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="11">
+        <addForeignKeyConstraint baseColumnNames="pick_up_origin_id" baseTableName="car" constraintName="FK_773DE69D4D42DB1D" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="pick_up_center"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="12">
+        <addForeignKeyConstraint baseColumnNames="pick_up_agency_id" baseTableName="agency" constraintName="FK_773DE69D4D42DB2D" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="pick_up_center"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="13">
+        <addForeignKeyConstraint baseColumnNames="agency_id" baseTableName="partnair" constraintName="FK_773DE69D4D42DB3D" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="agency"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="14">
+        <addForeignKeyConstraint baseColumnNames="agency_id" baseTableName="service" constraintName="FK_773DE69D4D42DB4D" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="agency"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="15">
+        <addForeignKeyConstraint baseColumnNames="service_id" baseTableName="price" constraintName="FK_773DE69D4D42DB5D" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="service"/>
+    </changeSet>
+    <changeSet author="Ashley (generated)" id="16">
+        <addForeignKeyConstraint baseColumnNames="car_id" baseTableName="price" constraintName="FK_773DE69D4D42DB6D" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="car"/>
+    </changeSet>
+</databaseChangeLog>
+
+
