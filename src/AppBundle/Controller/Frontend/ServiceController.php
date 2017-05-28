@@ -18,4 +18,12 @@ class ServiceController extends Controller
 
         return $this->render('frontend/default/service.html.twig', []);
     }
+    /**
+     * @Route("/wedding", name="wedding")
+     *
+     */
+    public function weddingAction(){
+
+        return $this->render('frontend/default/wedding.html.twig', []);
+    }
 }
