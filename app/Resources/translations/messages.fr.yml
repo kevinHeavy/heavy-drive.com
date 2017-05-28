@@ -63,6 +63,16 @@ heavy:
         forfaitweekcomment: Optez pour la sérénité le temps d'une semaine à bord de l'un de nos véhicules suréquipés et confortables
         kilometrage: Kilométrage illimité
         reserver: réserver
+    wedding:
+        marry: MARRY-ME
+        marryservice: Nos Forfait MARRY-ME
+        servicedescription: Profitez pleinement de votre mariage avec nos véhicules de Prestige. Plusieurs forfaits ci-dessous vous sont présentés afin de répondre pleinement à vos attentes.
+        forfaitday: La journée
+        forfaithome: Rapatriement au domicile
+        forfaitone: Forfait 1 : «Cortège PORSCHE» Capacité de 7 Personnes
+        forfaittwo: Forfait 2 : «Cortège Heavy H-D» Capacité de 12 Personnes
+        forfaitcortege: Forfait cortège
+        reserve: Réservé
     footer:
         title: Heavy Drive vous remercie de votre confiance
         subtitle: A votre dispotion
