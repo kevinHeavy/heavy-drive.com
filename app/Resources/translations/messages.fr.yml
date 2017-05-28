@@ -1,4 +1,28 @@
 heavy:
+    reservation:
+        step_1: Periode Location
+        step_2: Information personnelle
+        step_3: Justificatif (Facultatif)
+        step_4: Validation Pré-Réservation
+        rent_date: Choississez la durée de votre location
+        from_date: Date de début :
+        to_date: Date de fin :
+        button_next: Suivant
+        button_previous: Précédent
+        button_done: Validé
+        guest_info: Veuillez saisir les informations du loueur
+        account: Vous avez déjà un compte, Connectez-vous afin de pré-remplir vos informations personnelles
+        login_or: Login or
+        login: Login
+        signup: Inscription
+        licence_driver: Numero de permis
+        facebook: Facebook
+        google: Google
+        or: ou
+        password_error: mot de passe érroné
+        remember_me: Se souvenir de moi
+        proof_paper: Pièces justificatives
+
     register:
         description: Créer votre compte Heavy-Drive!
         firstname: Prénom*

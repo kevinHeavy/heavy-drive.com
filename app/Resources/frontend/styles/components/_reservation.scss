@@ -1,0 +1,158 @@
+.process-step .btn:focus{outline:none}
+.process{display:table;width:100%;position:relative}
+.process-row{display:table-row}
+.process-step button[disabled]{opacity:1 !important;filter: alpha(opacity=100) !important}
+.process-row:before{top:40px;bottom:0;position:absolute;content:" ";width:100%;height:1px;background-color:#ccc;z-order:0}
+.process-step{display:table-cell;text-align:center;position:relative}
+.process-step p{margin-top:4px}
+.btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
+
+.title h1{text-align: center}
+.title p{padding-top: 15px;}
+.bodywedding { min-width:200px; margin: 0 auto; font-family: 'Raleway', sans-serif; background:url('#'); background-size: cover; background-attachment:fixed; }
+.banner { height: 400px; display:block; padding-top:70px; }
+.topnav { width:80%; min-width:200px; margin:0 auto; display:block;  }
+.text { display:inline-block; width:49%; margin:0 auto; }
+.text.ttitle a { text-decoration:none; color:#fff; font-size:11pt; font-weight:bold; }
+.text.nav { min-width:200px; }
+.text.nav a { text-decoration:none; color:#d4e0ef; font-size:9pt; font-weight:bold;  padding:6px; }
+.text.nav a:hover { color:#fff; }
+.banner h1 { text-decoration:none; color:#fff; font-size:40pt; font-weight:lighter; width:80%; min-width:200px;  text-align:center; padding-top:85px;}
+.banner p { color:#d4e0ef; font-size:10pt; font-weight:bold; text-align:center;width:80%; min-width:200px; display:block; margin:0 auto; padding: 20px;  }
+#box { background: white; display:block; padding:5%; }
+.line { border-left:3px solid lightgray;margin-left: 20px }
+#box3 { margin:0 auto; width:28%; min-width:200px ; display: inline-block; padding: .5% 2.5%; padding-bottom: 50px;}
+#box3 h1{ font-weight:normal; font-size:16pt; margin:0 auto;  color:#5385c1; }
+#box3 p{ color:#9a9a9a; font-size:11pt; margin-bottom:30px; margin-top:20px; }
+.boxp{ background:rgba(83,133,193,0.8); display: block; width:100%; margin:0 auto; text-align:center; }
+.boxp h1 { color:#fff; font-size:20pt; font-weight:normal; text-align: center; }
+.boxp p { color:#bacee6; font-size:11pt; font-weight:normal; text-align: center; }
+.boxp h3 { color: #fff; font-weight: normal;}
+.More{ background:#5385c1; color: white; text-decoration: none; padding:10px 20px; }
+.More:hover { background-color:#5383c1; }
+.boxphoto { display:inline-block; width:15%; min-width:200px; margin:0 auto; padding:10px; padding-top:30px; padding-bottom:30px; text-align:center; margin-top:20px; margin-bottom:40px; border:1px solid #bacee6; margin-left:2%; margin-right:2%;   }
+.boxphoto h3 { margin:0 auto;  padding-top:30px; }
+.boxphoto p{margin:0 auto; padding: 5px;}
+.boxphoto img{ border-radius: 50%; }
+.box2p{ background:#fff; display: block; margin:0 auto; }
+.pbox { width:95%; margin:0 auto; text-align:center; }
+.box2p h1 { color:#5385c1; font-size:30pt; font-weight: lighter; margin-bottom:10px; text-align:center; }
+.box2p h3 { color:#5385c1; font-weight:normal; font-size: 15pt;  }
+.box2p p { color:#9a9a9a; font-size:11pt; font-weight:normal; margin-bottom: 30px; text-align:justify; }
+.photo { display:inline-block; width:40%; min-width:200px; margin:0 auto; margin-bottom:50px; padding:1%; text-align:left; }
+h1 {margin: 0 auto;}
+.box2p hr { border-top: 1px solid #dbdbdb; margin:0 auto; }
+.last { text-align:center; background:#fff; margin:0 auto;  padding:20px; display:block; }
+.last p { color:#bbb; font-size:10pt; font-weight:normal; margin:0 auto; }
+hr.line { background-color:#dbdbdb; width:80%; margin:0 auto; }
+.last .combo { display:inline-block; padding:2%; width:38%; min-width:200px; margin:0 auto; }
+.ralign { text-align:right; }
+.lalign { text-align:left; }
+.calign { text-align:center; }
+.social a { text-decoration:none; padding:5px; color:#5385c1; font-size: 14pt;  }
+.title { text-align:center; padding-top:50px; padding-bottom:20px;  }
+.title p {text-align:center; }
+
+/*plans css*/
+
+.plans {padding: 0 !important;}
+.plans h5 {background: #ed1c24;padding: 10px 10px;color: #fff;font-size: 16px;text-transform: uppercase;
+  letter-spacing: 1px;font-weight: bold;}
+
+.panel-pricing {-moz-transition: all .3s ease;-o-transition: all .3s ease;-webkit-transition: all .3s ease;}
+.panel-pricing:hover {box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);}
+.panel-pricing .panel-heading {padding:13px 10px;color:#fdfdfd;background-color:#ed1c24;border-color:#ed1c24;}
+.panel-pricing .panel-heading .fa {margin-top: 10px;font-size: 58px;}
+.panel-pricing .list-group-item {color: #777777;border-bottom: 1px solid rgba(250, 250, 250, 0.5);}
+.panel { border:0px solid !important;}
+.panel-pricing .panel-body {font-size:40px;padding:10px;margin:0px;border-bottom: 1px solid #cfcfcf;}
+.panel-footer { border:0px solid !important;background-color:#fff !important;}
+.panel-pricing .panel-heading h3 {margin: 0;padding: 10px;}
+p.p-title { font-size:18px;text-align: center;text-transform: capitalize;}
+p.p-time { font-size:18px;text-align: center;text-transform: capitalize;}
+p.p-price { font-size:18px;text-align: center;text-transform: capitalize;color: #ed1c24;font-weight: bold;}
+p.p-tax { font-size:18px;text-align: center;text-transform: capitalize;}
+.sub-btn {background: #ed1c24;color: #fff;border-radius: 0px;padding: 5px 8px;}
+.sub-btn:hover, .sub-btn:focus { color:#fff; text-decoration:none;}
+
+#subtitle{margin-top: -10px;}
+#price{margin-top: 20px;}
+#price1{margin-top: 20px; margin-left:200px;}
+#well{background-color: white}
+
+
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+h3{
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+    margin-left: 10%;
+  }
+}
+
+.omb_login .omb_authTitle {
+  text-align: center;
+  line-height: 300%;
+}
+
+.omb_login .omb_socialButtons a {
+  color: white; // In yourUse @body-bg
+  opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+  color: white;
+  opacity:1;
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+  position: relative;
+  font-size: 1.5em;
+  color: #aaa;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -0.6em;
+  margin-left: -1.5em;
+  background-color: white;
+  width: 3em;
+  text-align: center;
+}
+
+.omb_login .omb_loginForm .input-group.i {
+  width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+  color: red;
+}
+
+
+@media (min-width: 768px) {
+  .omb_login .omb_forgotPwd {
+    text-align: right;
+    margin-top:10px;
+  }
+
+
+}
