@@ -1,3 +1,12 @@
+.well.head{
+  margin-top: 100px;
+  margin-bottom: 0px;
+
+ }
+.well.body{
+
+  border-radius: 20px;
+}
 .panel {
   border: 1px solid #001f3f;
   border-radius:0;
@@ -5,7 +14,7 @@
   padding-top: 40px;
 }
 
-.panel:hover {
+/*.panel:hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
@@ -13,9 +22,10 @@
   border: 1px solid black;
   background-color: white !important;
   color: black;
-}
+}*/
 
-.panel-heading {
+#panel-heading-service {
+  padding-top: -10%;
   color: white !important;
   background-color: #001f3f !important;
   padding: 25px;
@@ -24,6 +34,9 @@
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+#well-service{
+  border-color: #001f3f;
 }
 
 .panel-footer {
