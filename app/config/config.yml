@@ -47,6 +47,8 @@ doctrine:
         user: '%database_user%'
         password: '%database_password%'
         charset: UTF8
+        mapping_types:
+            bit: boolean
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: '%kernel.root_dir%/data/data.db3'
@@ -74,3 +76,12 @@ sonata_block:
         # enable the SonataAdminBundle block
         sonata.admin.block.admin_list:
             contexts:   [admin]
+
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: AppBundle\Entity\Client
+    ## To solve the problem
+    from_email:
+        address: "noreply@yourcompany.com"
+        sender_name: "No Reply"
