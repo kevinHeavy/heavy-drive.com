@@ -24,4 +24,8 @@ security:
             #http_basic: ~
 
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+<<<<<<< HEAD
             #form_login: ~
+=======
+            #form_login: ~
+>>>>>>> f8d92ee... change template

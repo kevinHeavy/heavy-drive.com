@@ -1,280 +1,113 @@
 {% extends "frontend/base.html.twig" %}
 {% block body %}
-
-<div class="container-fluid">
-    <div class="col-md-12 text-center">
-        <h1>{{ 'heavy.service.title'| trans }}</h1><br><br>
-    </div>
-    <div class="col-md-12">
-        <table>
-            <div class="panel panel-default text-center">
-                <h2>Mini Cooper S</h2>
-                <h4>Choississez votre formule</h4>
+    <section class="features-section relative background-2">
+        <div class="container">
+            <div class="row section-separator-small sp-top margin-b-75">
+                <div class="section-header col-xs-12">
+                    <h2 class="centered">Nos services</h2>
+                    <hr class="star-light">
+                </div>
+                <div class="features-item margin-t-70 col-xs-12">
+                    <div class="row">
+                        <div class="each-item business-item col-xs-12">
+                            <div class="each-item-inner">
+                                <div class="vertical-middle features-image bg-cover col-sm-6 col-xs-12" style="background-image: url('images/wedding_service.jpg')"></div>
+                                <div class="vertical-middle features-content triangle-left col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <div class="inner text-right">
+                                            <div class="section-header">
+                                                <h3 class="section-heading">Business consulting</h3>
+                                            </div>
+                                            <div class="detail small-spacing">
+                                                <p>
+                                                    As one of the world’s largest accountancy networks, elixir helps a diverse range of clients with a diverse range of needs.This is especially  true of our Advisory Practice, which provides corporate finance and transaction services, business restructuring.
+                                                </p>
+                                            </div>
+                                            <div class="btn-form btn-interest">
+                                                <a class="btn left-icon" href="#" data-toggle="" data-target="">
+                                                    <i class="fa fa-long-arrow-left"></i>LEARN MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="each-item business-item col-xs-12">
+                            <div class="each-item-inner">
+                                <div class="vertical-middle features-image bg-cover col-sm-6 col-sm-push-6" style="background-image: url('images/wedding_service.jpg')"></div>
+                                <div class="vertical-middle features-content triangle-right col-sm-6 col-sm-pull-6">
+                                    <div class="row">
+                                        <div class="inner text-left">
+                                            <div class="section-header">
+                                                <h3 class="section-heading">Text consulting</h3>
+                                            </div>
+                                            <div class="detail small-spacing">
+                                                <p>
+                                                    Elixir serves clients across the country and around the world as they navigate an increasingly complex tax landscape. Our tax professionals draw on deep experience and industry-specific knowledge to deliver clients the insights and innovation they need.
+                                                </p>
+                                            </div>
+                                            <div class="btn-form btn-interest">
+                                                <a class="btn right-icon" href="#" data-toggle="" data-target="">LEARN MORE
+                                                    <i class="fa fa-long-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="each-item business-item col-xs-12">
+                            <div class="each-item-inner">
+                                <div class="vertical-middle features-image bg-cover col-sm-6 col-xs-12" style="background-image: url('images/wedding_service.jpg')"></div>
+                                <div class="vertical-middle features-content triangle-left col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <div class="inner text-right">
+                                            <div class="section-header">
+                                                <h3 class="section-heading">Advisory</h3>
+                                            </div>
+                                            <div class="detail small-spacing">
+                                                <p>
+                                                    As one of the world’s largest accountancy networks, elixir helps a diverse range of clients with a diverse range of needs.This is especially  true of our Advisory Practice, which provides corporate finance and transaction services, business restructuring.
+                                                </p>
+                                            </div>
+                                            <div class="btn-form btn-interest">
+                                                <a class="btn left-icon" href="#" data-toggle="" data-target="">
+                                                    <i class="fa fa-long-arrow-left"></i>LEARN MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="each-item business-item col-xs-12">
+                            <div class="each-item-inner">
+                                <div class="vertical-middle features-image bg-cover col-sm-6 col-sm-push-6" style="background-image: url('images/wedding_service.jpg')"></div>
+                                <div class="vertical-middle features-content triangle-right col-sm-6 col-sm-pull-6">
+                                    <div class="row">
+                                        <div class="inner text-left">
+                                            <div class="section-header">
+                                                <h3 class="section-heading">Audit &amp; Assurance</h3>
+                                            </div>
+                                            <div class="detail small-spacing">
+                                                <p>
+                                                    The world is a more complex and challenging place for business than ever before. That complexity is evident in the design of business structures,in the interconnectedness of supply chains and in the construction of transactions themselves. transactions themselves.
+                                                </p>
+                                            </div>
+                                            <div class="btn-form btn-interest">
+                                                <a class="btn right-icon" href="#" data-toggle="" data-target="">LEARN MORE
+                                                    <i class="fa fa-long-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.more-button-section.section-separator-small.text-center.col-xs-12--><!--    .btn-form--><!--        a.btn.btn-fill-big(href='#')= btnText-->
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitchrono'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitchronocomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>99€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweekend'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekendcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>499€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweek'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>659€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </table>
-        <!-- deuxieme tableau-->
-        <table>
-            <div class="panel panel-default text-center">
-                <h2>Range Rover Evoque</h2>
-                <h4>Choississez votre formule</h4>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitchrono'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitchronocomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>199€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweekend'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekendcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>849€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweek'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>1199€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </table>
-        <!-- troisieme tableau-->
-        <table>
-            <div class="panel panel-default text-center">
-                <h2>Porshe Cayman S</h2>
-                <h4>Choississez votre formule</h4>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitchrono'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitchronocomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>199€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweekend'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekendcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>849€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweek'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>1359€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </table>
-        <!-- quatrieme tableau-->
-        <table>
-            <div class="panel panel-default text-center">
-                <h2>Mercedes ML63</h2>
-                <h4>Choississez votre formule</h4>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitchrono'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitchronocomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>299€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweekend'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekendcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>1199€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweek'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>1599€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </table>
-        <!--cinquieme tableau-->
-        <table>
-            <div class="panel panel-default text-center">
-                <h2>Bentley Continental</h2>
-                <h4>Choississez votre formule</h4>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitchrono'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitchronocomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>499€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweekend'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekendcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>1799€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>{{ 'heavy.service.forfaitweek'|trans }}</h1>
-                        </div>
-                        <div class="panel-body">
-                            {{ 'heavy.service.forfaitweekcomment'|trans }}
-                        </div>
-                        <div class="panel-footer">
-                            <h2>{{ 'heavy.service.kilometrage'|trans }}</h2>
-                            <h3>3299€</h3>
-                            <button class="btn btn-lg">{{ 'heavy.service.reserver'|trans }}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </table>
-    </div>
-</div>
+        </div>
+    </section>
 {% endblock %}
