@@ -66,16 +66,21 @@ heavy:
     cars:
         selection: Notre Sélection
 
-
     homepage:
         welcome: Bienvenue !
-        about_us: |
-                              <h2>Heavy-Drive est une entreprise familiale qui a pour vocation de louer et de fournir des services de transports hauts de gammes.</h2>
-                              <p class="m-bottom">
-                              L'idée est de démocratiser auprès d'un maximum de populations les différentes prestations de prestige en pratiquant des tarifications abordables, tout en conservant une qualité de service optimale. Chez Heavy-Drive, votre bien-être ainsi que la qualité de service est notre priorité.<br>
-                              Nos tarifs sont des plus concurrentiels et notre dévouement envers notre clientèle est total.<strong>Heavy-Drive</strong> vous accompagne et vous conseille dans le choix de votre véhicule. D'autres prestations telles que <a href="#" >"Heavy-Drive Me"</a> (Chauffeur privé) vous seront également proposées par notre équipe à des tarifs toujours compétitifs. <br>
-                              Qu'il s'agisse d'un accompagnement à l'aéroport, d'un retour à domicile en fin de soirée, ou encore d'un service de Grande Remise pour un mariage ou un événement particulier, Heavy-Drive est la solution à vos besoins. Avec Heavy-Drive, sentez-vous bien, sentez-vous libre...
-                              </p>
+        about_us:
+            title: <h3>Heavy-Drive est une entreprise familiale qui a pour vocation de louer et de fournir des services de transports hauts de gammes.</h3>
+            about_us_left: |
+                              <p style = "font-size: 18px;"> L'idée est de démocratiser auprès d'un maximum de populations les différentes prestations de prestige en pratiquant des tarifications abordables, tout en conservant une qualité de service optimale. Chez Heavy-Drive, votre bien-être ainsi que la qualité de service est notre priorité.
+                              Nos tarifs sont des plus concurrentiels et notre dévouement envers notre clientèle est total.</p>
+            about_us_center: |
+
+                            <p style = "font-size: 18px;"><strong>Heavy-Drive</strong> vous accompagne et vous conseille dans le choix de votre véhicule. D'autres prestations telles que <a href="#" >"Heavy-Drive Me"</a> (Chauffeur privé) vous seront également proposées par notre équipe à des tarifs toujours compétitifs. <br>
+                                                                                                          </p>
+            about_us_right: |
+
+                                        <p style = "font-size: 18px;">Qu'il s'agisse d'un accompagnement à l'aéroport, d'un retour à domicile en fin de soirée, ou encore d'un service de Grande Remise pour un mariage ou un événement particulier, Heavy-Drive est la solution à vos besoins. Avec Heavy-Drive, sentez-vous bien, sentez-vous libre...
+                                                                    </p>
         our_expertise: Notre expertise
     service:
         title: Nos préstations
