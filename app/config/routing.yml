@@ -3,8 +3,8 @@ app_frontend:
     type: annotation
 
 #app_backend:
- #   resource: '@AppBundle/Controller/Backend'
-  #  type: annotation
+ #  resource: '@AppBundle/Controller/Backend'
+  # type: annotation
 
 # app/config/routing.yml
 fos_user_security:
