@@ -1,0 +1,6 @@
+services:
+    heavy.admin.service:
+        class: AppBundle\Admin\ServiceAdmin
+        arguments: [~, AppBundle\Entity\Service, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Administration, label: Service }
