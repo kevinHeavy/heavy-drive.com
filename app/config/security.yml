@@ -24,5 +24,4 @@ security:
             #http_basic: ~
 
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
-
-            #form_login: ~e
+            #form_login: ~
