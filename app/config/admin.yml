@@ -4,3 +4,9 @@ services:
         arguments: [~, AppBundle\Entity\Service, ~]
         tags:
             - { name: sonata.admin, manager_type: orm, group: Administration, label: Service }
+
+    heavy.admin.agency:
+        class: AppBundle\Admin\AgencyAdmin
+        arguments: [~, AppBundle\Entity\Agency, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Administration, label: Agency}
