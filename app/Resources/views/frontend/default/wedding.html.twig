@@ -1,202 +1,236 @@
 {% extends "frontend/base.html.twig" %}
 {% block body %}
-    <h2 class="centered">{{ 'heavy.wedding.marryservice'| trans }}</h2>
-    <hr class="star-light">
-
-    <section class="section-wedding">
-        <div class="container-fluid">
-            <div id="well" class="wedding">
-                <div class="well centered bloc-wedding">
+    <div class="title">
+    <h1>{{ 'heavy.wedding.marryservice'| trans }}</h1>
+    <p>{{ 'heavy.wedding.servicedescription'| trans }}</p>
+        <div class="container">
+            <div class="row">
+                <div id="myCarousel" class="carousel  slide">
+                    <!-- Dot Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Items -->
+                    <div class="carousel-inner">
+                        <div class="active item">  <img src="//placehold.it/1300x500" class="img-responsive"></div>
+                        <div class="item">  <img src="//placehold.it/1300x500" class="img-responsive"></div>
+                        <div class="item">  <img src="//placehold.it/1300x500" class="img-responsive"></div>
+                    </div>
+                    <!-- Navigation -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- price -->
+    <section>
+        <div class="container">
+            <div id="well" class="well">
+                <div class="well text-center">
                     <h3>{{ 'heavy.wedding.marry'| trans }}</h3>
                 </div>
                 <br>
-                <div class="row col-md-6">
-                    <div id="subtitle" class="well well-wedding centered">
+                <div class="row col-md-6 center-block">
+                    <div id="subtitle" class="well text-center">
                         <h3>{{ 'heavy.wedding.forfaitday'| trans }}</h3>
-                        <div id="price" class="col-md-4 col-sm-2 col-xs-12 centered">
+                        <div id="price" class="col-md-4 col-sm-12 col-xs-12 text-center">
                             <div class="panel panel-pricing">
-                                <div class="panel-heading panel-wedding">
+                                <div class="panel-heading">
                                     <h3>Porsche Cayenne Noir</h3>
                                 </div><!--panel-heading close-->
-                                <div class="panel-body centered">
+                                <div class="panel-body text-center">
                                     <p class="p-title">Subscription Duration</p><!--p-title close-->
                                     <p class="p-time">2 days - 30 Mins</p><!--p-time close-->
-                                </div><!--panel-body centered close-->
-                                <div class="panel-body centered">
-                                    <p class="p-price-cortege">₦ 50.00 </p><!--p-price-cortege close-->
+                                </div><!--panel-body text-center close-->
+                                <div class="panel-body text-center">
+                                    <p class="p-price">₦ 50.00 </p><!--p-price close-->
                                     <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                </div><!--panel-body centered close-->
+                                </div><!--panel-body text-center close-->
                                 <div class="panel-footer">
                                     <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                 </div>
                             </div><!--panel panel-pricing close-->
-                        </div><!--col-md-4 col-sm-4 col-xs-12 centered close-->
-                        <div id="price" class="col-md-4 col-sm-2 col-xs-12 centered">
+                        </div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+                       <div id="price" class="col-md-4 col-sm-12 col-xs-12 text-center">
                             <div class="panel panel-pricing">
                                 <div class="panel-heading">
                                     <h3>Porsche Cayenne Blanc</h3>
                                 </div><!--panel-heading close-->
-                                <div class="panel-body centered">
+                                <div class="panel-body text-center">
                                     <p class="p-title">Subscription Duration</p><!--p-title close-->
                                     <p class="p-time">7 days - 90 Mins</p><!--p-time close-->
-                                </div><!--panel-body centered close-->
-                                <div class="panel-body centered">
-                                    <p class="p-price-cortege">₦ 150.00 </p><!--p-price-cortege close-->
+                                </div><!--panel-body text-center close-->
+                                <div class="panel-body text-center">
+                                    <p class="p-price">₦ 150.00 </p><!--p-price close-->
                                     <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                </div><!--panel-body centered close-->
+                                </div><!--panel-body text-center close-->
                                 <div class="panel-footer">
                                     <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                 </div>
                             </div><!--panel panel-pricing close-->
-                        </div><!--col-md-4 col-sm-4 col-xs-12 centered close-->
-
-
-                        <div id="price" class="col-md-4 col-sm-2 col-xs-12 centered">
+                        </div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+                        <div id="price" class="col-md-4 col-sm-12 col-xs-12 text-center">
                             <div class="panel panel-pricing">
                                 <div class="panel-heading">
-                                    <h3>Mercedes-Benz ML63 AMG</h3>
+                                    <h3>Mercedes ML63 AMG</h3>
                                 </div><!--panel-heading close-->
-                                <div class="panel-body centered">
+                                <div class="panel-body text-center">
                                     <p class="p-title">Subscription Duration</p><!--p-title close-->
                                     <p class="p-time">30 days - 250 Mins</p><!--p-time close-->
-                                </div><!--panel-body centered close-->
-                                <div class="panel-body centered">
-                                    <p class="p-price-cortege">₦ 400.00 </p><!--p-price-cortege close-->
+                                </div><!--panel-body text-center close-->
+                                <div class="panel-body text-center">
+                                    <p class="p-price">₦ 400.00 </p><!--p-price close-->
                                     <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                </div><!--panel-body centered close-->
+                                </div><!--panel-body text-center close-->
                                 <div class="panel-footer">
                                     <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                 </div>
                             </div><!--panel panel-pricing close-->
-                        </div><!--col-md-4 col-sm-4 col-xs-12 centered close-->
+                        </div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
                     </div>
                 </div>
-                <div class="row">
-                    <div class="row col-md-6 line">
-                        <div id="subtitle" class="well well-wedding centered">
-                            <h3>{{ 'heavy.wedding.forfaithome'| trans }}</h3>
-                            <div id="price" class="col-md-4 col-sm-2 col-xs-12 centered">
-                                <div class="panel panel-pricing">
-                                    <div class="panel-heading">
+                    <div class="row col-md-6 center-block">
+                            <div id="subtitle" class="well text-center">
+                                <h3>{{ 'heavy.wedding.forfaithome'| trans }}</h3>
+                                <div id="price" class="col-md-4 col-sm-12 col-xs-12 text-center">
+                                    <div class="panel panel-pricing">
+                                        <div class="panel-heading">
                                         <h3>Porsche Cayenne Noir</h3>
                                     </div><!--panel-heading close-->
-                                    <div class="panel-body centered">
+                                    <div class="panel-body text-center">
                                         <p class="p-title">Subscription Duration</p><!--p-title close-->
                                         <p class="p-time">2 days - 30 Mins</p><!--p-time close-->
-                                    </div><!--panel-body centered close-->
-                                    <div class="panel-body centered">
-                                        <p class="p-price-cortege">₦ 50.00 </p><!--p-price-cortege close-->
+                                    </div><!--panel-body text-center close-->
+                                    <div class="panel-body text-center">
+                                        <p class="p-price">₦ 50.00 </p><!--p-price close-->
                                         <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                    </div><!--panel-body centered close-->
+                                    </div><!--panel-body text-center close-->
                                     <div class="panel-footer">
                                         <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                     </div>
                                 </div><!--panel panel-pricing close-->
-                            </div><!--col-md-4 col-sm-4 col-xs-12 centered close-->
-                            <div id="price" class="col-md-4 col-sm-2 col-xs-12 centered">
+                            </div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+                            <div id="price" class="col-md-4 col-sm-12 col-xs-12 text-center">
                                 <div class="panel panel-pricing">
                                     <div class="panel-heading">
                                         <i class="fa fa-windows"></i>
                                         <h3>Porsche Cayenne Blanc</h3>
                                     </div><!--panel-heading close-->
-                                    <div class="panel-body centered">
+                                    <div class="panel-body text-center">
                                         <p class="p-title">Subscription Duration</p><!--p-title close-->
                                         <p class="p-time">7 days - 90 Mins</p><!--p-time close-->
-                                    </div><!--panel-body centered close-->
-                                    <div class="panel-body centered">
-                                        <p class="p-price-cortege">₦ 150.00 </p><!--p-price-cortege close-->
+                                    </div><!--panel-body text-center close-->
+                                    <div class="panel-body text-center">
+                                        <p class="p-price">₦ 150.00 </p><!--p-price close-->
                                         <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                    </div><!--panel-body centered close-->
+                                    </div><!--panel-body text-center close-->
                                     <div class="panel-footer">
                                         <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                     </div>
                                 </div><!--panel panel-pricing close-->
-                            </div><!--col-md-4 col-sm-4 col-xs-12 centered close-->
-                            <div id="price" class="col-md-4 col-sm-2 col-xs-12 centered">
+                            </div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+                            <div id="price" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
                                 <div class="panel panel-pricing">
                                     <div class="panel-heading">
-                                        <h3>Mercedes-Benz ML63 AMG
+                                        <h3>Mercedes ML63 AMG
                                         </h3>
                                     </div><!--panel-heading close-->
-                                    <div class="panel-body centered">
+                                    <div class="panel-body text-center">
                                         <p class="p-title">Subscription Duration</p><!--p-title close-->
                                         <p class="p-time">30 days - 250 Mins</p><!--p-time close-->
-                                    </div><!--panel-body centered close-->
-                                    <div class="panel-body centered">
-                                        <p class="p-price-cortege">₦ 400.00 </p><!--p-price-cortege close-->
+                                    </div><!--panel-body text-center close-->
+                                    <div class="panel-body text-center">
+                                        <p class="p-price">₦ 400.00 </p><!--p-price close-->
                                         <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                    </div><!--panel-body centered close-->
+                                    </div><!--panel-body text-center close-->
                                     <div class="panel-footer">
                                         <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                     </div>
                                 </div><!--panel panel-pricing close-->
-                            </div><!--col-md-4 col-sm-4 col-xs-12 centered close-->
+                            </div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
                         </div>
                     </div>
-                </div><!--row close-->
-            </div>
+                </div>
+
         </div><!--container close-->
     </section><!--section close-->
     <section>
-        <div class="container-fluid">
-            <div id="well" class="wedding">
-                <div class="well centered">
+        <div class="container">
+            <div id="well" class="well">
+                <div class="well text-center">
                     <h3>{{ 'heavy.wedding.forfaitcortege'| trans }}</h3>
                 </div>
                 <br>
-                <div class="row col-md-6">
-                    <div id="subtitle" class="well well-wedding centered">
+                <div class="row col-md-6 center-block">
+                    <div id="subtitle" class="well center-block">
                         <h3>{{ 'heavy.wedding.forfaitone'| trans }}</h3>
-                        <div id="price-cortege" class="col-md-6 col-sm-6 col-xs-12 centered">
+                        <div id="price" class="col-md-12 col-sm-12 col-xs-12 text-center">
                             <div class="panel panel-pricing">
                                 <div class="panel-heading">
                                     <h3>Porsche Cayenne Blanc</h3>
-                                    <h3>Mercedes-Benz ML63 AMG</h3>
-                                    <h3>Mercedes-Benz ML63 AMG</h3>
                                     <br>
                                 </div><!--panel-heading close-->
-                                <div class="panel-body centered">
+                                <div class="panel-heading">
+                                    <h3>Mercedes ML63 AMG</h3>
+                                    <br>
+                                </div><!--panel-heading close-->
+                                <div class="panel-heading">
+                                    <h3>Mercedes ML63 AMG</h3>
+                                </div><!--panel-heading close-->
+                                <div class="panel-body text-center">
                                     <p class="p-title">Subscription Duration</p><!--p-title close-->
                                     <p class="p-time">7 days - 90 Mins</p><!--p-time close-->
-                                </div><!--panel-body centered close-->
-                                <div class="panel-body centered">
-                                    <p class="p-price-cortege">₦ 150.00 </p><!--p-price-cortege close-->
+                                </div><!--panel-body text-center close-->
+                                <div class="panel-body text-center">
+                                    <p class="p-price">₦ 150.00 </p><!--p-price close-->
                                     <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                </div><!--panel-body centered close-->
+                                </div><!--panel-body text-center close-->
                                 <div class="panel-footer">
                                     <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                 </div>
                             </div><!--panel panel-pricing close-->
-                        </div><!--col-md-6 col-sm-6 col-xs-12 centered close-->
+                        </div><!--col-md-6 col-sm-6 col-xs-12 text-center close-->
                     </div>
                 </div>
-
-                    <div class="row col-md-6 line">
-                        <div id="subtitle" class="well well-wedding centered">
+                   <div class="row col-md-6 center-block">
+                        <div id="subtitle" class="well center-block">
                             <h3> {{ 'heavy.wedding.forfaittwo'| trans }}</h3>
-                            <div id="price-cortege" class="col-md-6 col-sm-6 col-xs-12 centered">
+                            <div id="price" class="col-md-12 col-sm-12 col-xs-12 text-center">
                                 <div class="panel panel-pricing">
                                     <div class="panel-heading">
                                         <h3>Porsche Cayenne Blanc</h3>
-                                        <h3>Mercedes-Benz ML63 AMG</h3>
-                                        <h3>Mercedes-Benz ML63 AMG</h3>
                                         <br>
                                     </div><!--panel-heading close-->
-                                    <div class="panel-body centered">
+                                    <div class="panel-heading">
+                                        <h3>Mercedes ML63 AMG</h3>
+                                        <br>
+                                    </div><!--panel-heading close-->
+                                    <div class="panel-heading">
+                                        <h3>Mercedes ML63 AMG</h3>
+                                    </div><!--panel-heading close-->
+                                    <div class="panel-body text-center">
                                         <p class="p-title">Subscription Duration</p><!--p-title close-->
                                         <p class="p-time">7 days - 90 Mins</p><!--p-time close-->
-                                    </div><!--panel-body centered close-->
-                                    <div class="panel-body centered">
-                                        <p class="p-price-cortege">₦ 150.00 </p><!--p-price-cortege close-->
+                                    </div><!--panel-body text-center close-->
+                                    <div class="panel-body text-center">
+                                        <p class="p-price">₦ 150.00 </p><!--p-price close-->
                                         <p class="p-tax">All inclusive</p><!--p-tax close-->
-                                    </div><!--panel-body centered close-->
+                                    </div><!--panel-body text-center close-->
                                     <div class="panel-footer">
                                         <a class="btn sub-btn" href="#">{{ 'heavy.wedding.reserve'| trans }}</a>
                                     </div>
                                 </div><!--panel panel-pricing close-->
-                            </div><!--col-md-6 col-sm-6 col-xs-12 centered close-->
+                            </div><!--col-md-6 col-sm-6 col-xs-12 text-center close-->
                         </div>
                     </div>
+                </div><!--row close-->
             </div><!--container close-->
         </div>
+    </section><!--section close-->
 {% endblock %}

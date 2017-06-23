@@ -15,15 +15,6 @@ header.carousel .fill {
 #carousel-example-generic{
   margin-left: 30%;
 }
-.tarif_prestation li, a {
-  font-size: large;
-}
-.tarif_prestation a {
-  font-size: large;
-  color: #6E1F7C;
-  text-decoration: none;
-}
-
 .bs-five-area.bs-radius{
   border-radius: 30px;
   text-align: center;
@@ -58,22 +49,22 @@ header.carousel .fill {
   border-bottom:0px;
 }
 .bs-five-area .bs-five:hover{
-  background: #6E1F7C;
+  background: #179880;
   transition: all 0.4s;
 }
 .bs-five-area .bs-five.active {
-  background: #6E1F7C;
-  background: -webkit-linear-gradient(left, #6E1F7C , #21A476);
-  background: -o-linear-gradient(right, #6E1F7C, #21A476);
-  background: -moz-linear-gradient(right, #6E1F7C, #21A476);
-  background: linear-gradient(to right, #6E1F7C , #21A476);
+  background: #179880;
+  background: -webkit-linear-gradient(left, #179880 , #21A476);
+  background: -o-linear-gradient(right, #179880, #21A476);
+  background: -moz-linear-gradient(right, #179880, #21A476);
+  background: linear-gradient(to right, #179880 , #21A476);
 }
 .bs-five-area .bs-five .btn-success{
   padding: 10px 50px;
   display: inline-block;
   border-radius: 30px;
-  background-color: #6E1F7C;
-  border-color: #6E1F7C;
+  background-color: #179880;
+  border-color: #21A476;
 }
 .bs-five-area .bs-five.active .btn.btn-success,
 .bs-five-area .bs-five:hover.bs-five .btn.btn-success{
@@ -87,31 +78,17 @@ header.carousel .fill {
 {
   color:#fff;
 }
-
+#tit{
+  text-align: center;
+  color: #3a526b;
+}
 .clickable{
   cursor: pointer;
 }
-
-.bs-five-area .bs-five.active,
-.bs-five-area .bs-five.active a
-.bs-five-area .bs-five:hover.bs-five,
-.bs-five-area .bs-five:hover.bs-five a
-{
-  color:black;
+.panel-heading span {
+  margin-top: -20px;
+  font-size: 15px;
 }
-
-.details_techniques {
-  padding-top: 4%;
-  padding-bottom: 2%;
-}
-
-.panel-info>.infos_moteur,
-.panel-info>.infos_performance,
-.panel-info>.infos_transmission {
-  background-color: #6E1F7C;
-  color: white;
-}
-
-.infos-car {
-    border-color: black;
+#title{
+  font-size: x-large;
 }

@@ -1,75 +1,56 @@
-.contain_home{
-  width: 100%;
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #FFCC00 !important;
+  background-color: #500a6f !important;
 }
-
-.homepage__main-container {
+#slogan{
   color:#222222;
+  z-index: 1;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 20%;
   border: 3px solid purple;
   padding: 10px;
+  border-radius: 15px;
+  width: 700px;
   letter-spacing: 3px;
-  float:none;
-  clear:both;
-  width: 70%;
-  margin-left: 15%;
+  font-size: 25px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
-.video_play{
-  top: -12px;
-  z-index: -1;
-  opacity: 0.60;
-
+.container-fluid {
+  padding: 60px 50px;
 }
-
-.row-video {
-  margin-top: -1%;
-}
-
-#about_us, #expertise {
-  padding: 100px 0;
-}
-
-.about_us p{
-  line-height: 10%;
-}
-
-#expertise {
-  background-color: #eee;
-}
-
-hr.star-light {
-  border-color: #fff;
-}
-
-hr.star-light, hr.star-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 250px;
-  margin: 25px auto 30px;
-}
-
-/*.panel-heading {
+.panel-heading {
   text-align: center;
   border: 3px solid purple;
   border-bottom: 3px solid purple;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: -7%;
   width: 100%;
-}*/
-
+}
+.content-section{
+  width: 80%;
+  margin: 0% auto;
+  padding: 8% 0;
+  margin-top: -10%;
+}
 .content-section h1{
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.content-section p{
+  font-size: 1.2em;
+  color: #333;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
 .logo-small {
   color: blueviolet;
   font-size: 75px;
 }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -83,4 +64,11 @@ hr.star-light, hr.star-primary {
 #_navigation {
   margin-bottom: 0%;
 }
-
+#vid{
+  top: -12px;
+  z-index: -1;
+  opacity: 0.60;
+}
+#homecontainer{
+  width: 100%;
+}

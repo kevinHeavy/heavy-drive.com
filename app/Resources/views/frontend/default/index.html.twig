@@ -1,81 +1,61 @@
 {% extends 'frontend/base.html.twig' %}
 {% block body %}
-    <div class="container contain_home">
-        <div class="row row-video">
-            <div class="embed-responsive embed-responsive-16by9">
-                <div class="homepage__main-container centered">
-                    <h3 >{{ 'heavy.website.slogan'|trans }}</h3>
+<div id="homecontainer" class="container">
+    <div class="row">
+        <div class="embed-responsive embed-responsive-16by9">
+            <div id="slogan">
+                <h3 >{{ 'heavy.website.slogan'|trans }}</h3>
+            </div>
+            <video id="vid" autoplay loop>
+                <source class="embed-responsive-item" src="{{ asset('video/Video_de_heavy_cut.mp4') }}">
+            </video>
+        </div>
+        <div class="container" style=" margin-top: 30px;">
+            <div class="content-section">
+                <h1>{{ 'heavy.homepage.welcome'|trans }}</h1>
+                {{ 'heavy.homepage.about_us'|trans|raw }}
+            </div>
+            <hr>
+            <div id="services" class="container-fluid text-center">
+                <h2>{{ 'heavy.homepage.our_expertise'| trans }}</h2>
+                <br>
+                <div class="row slideanim">
+                    <div class="col-sm-4">
+                        <h4>Proximité avec le client</h4>
+                        <span class="glyphicon glyphicon-user logo-small"></span>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Satisfaction client</h4>
+                        <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>rapport qualité/prix</h4>
+                        <span class="glyphicon glyphicon-eur logo-small"></span>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
                 </div>
-                <video class="video_play" autoplay loop>
-                    <source class="embed-responsive-item" src="{{ asset('video/Video_de_heavy_cut.mp4') }}">
-                </video>
+                <br><br>
+                <div class="row slideanim">
+                    <div class="col-sm-4">
+                        <h4>Kilométrage illimité</h4>
+                        <span class="glyphicon glyphicon-road logo-small"></span>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Expertise</h4>
+                        <span class="glyphicon glyphicon-wrench logo-small"></span>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Confiance</h4>
+                        <span class="glyphicon glyphicon-ok logo-small"></span>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
-    <section id="about_us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About us</h2>
-                    <hr class="star-light">
-                    {{ 'heavy.homepage.about_us.title'|trans|raw }}
-                    <br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 ">
-                    {{ 'heavy.homepage.about_us.about_us_left'|trans|raw }}
-                </div>
-                <div class="col-lg-4">
-                    {{ 'heavy.homepage.about_us.about_us_center'|trans|raw }}
-                </div>
-                <div class="col-lg-4">
-                    {{ 'heavy.homepage.about_us.about_us_right'|trans|raw }}
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="expertise">
-        <div class="container-fluid text-center">
-            <h2>{{ 'heavy.homepage.our_expertise'| trans }}</h2>
-            <hr class="star-light">
-            <br>
-            <div class="row slideanim">
-                <div class="col-sm-4">
-                    <h4>Proximité avec le client</h4>
-                    <span class="glyphicon glyphicon-user logo-small"></span>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Satisfaction client</h4>
-                    <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                <div class="col-sm-4">
-                    <h4>rapport qualité/prix</h4>
-                    <span class="glyphicon glyphicon-eur logo-small"></span>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-            </div>
-            <br><br>
-            <div class="row slideanim">
-                <div class="col-sm-4">
-                    <h4>Kilométrage illimité</h4>
-                    <span class="glyphicon glyphicon-road logo-small"></span>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Expertise</h4>
-                    <span class="glyphicon glyphicon-wrench logo-small"></span>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Confiance</h4>
-                    <span class="glyphicon glyphicon-ok logo-small"></span>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
 {% endblock %}
