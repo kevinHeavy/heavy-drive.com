@@ -1,24 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ashley
-<<<<<<< HEAD
- * Date: 03/06/17
- * Time: 14:43
-=======
- * Date: 21/06/17
- * Time: 19:35
->>>>>>> 1e94bfc... [Datafixture] Generate data for a car
- */
 
 namespace AppBundle\DataFixtures\ORM;
 
-
-<<<<<<< HEAD
-class CarData
-{
-
-=======
 use AppBundle\DataFixtures\BaseFixtureLoader;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -97,5 +80,4 @@ class CarData extends BaseFixtureLoader implements OrderedFixtureInterface, Cont
         // TODO: Implement getOrder() method.
         return 2;
     }
->>>>>>> 1e94bfc... [Datafixture] Generate data for a car
 }
