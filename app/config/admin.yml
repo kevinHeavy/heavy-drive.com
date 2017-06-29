@@ -10,3 +10,9 @@ services:
         arguments: [~, AppBundle\Entity\Agency, ~]
         tags:
             - { name: sonata.admin, manager_type: orm, group: Administration, label: Agency}
+
+    heavy.admin.car:
+        class: AppBundle\Admin\CarAdmin
+        arguments: [~, AppBundle\Entity\Car, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion des véhicules, label: Car}
