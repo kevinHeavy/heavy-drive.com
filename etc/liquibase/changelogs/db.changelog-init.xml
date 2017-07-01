@@ -41,6 +41,7 @@
             <column name="mileage_real" type="INT"/>
             <column name="mileage_estimate" type="INT"/>
             <column name="last_servicing_mileage" type="INT"/>
+            <column name="last_maintenance_mileage" type="INT"/>
             <column name="chassis_jig" type="bool">
                 <constraints nullable="false"/>
             </column>
