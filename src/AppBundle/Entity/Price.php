@@ -79,7 +79,7 @@ class Price
      *
      * @param string $toPay
      *
-     * @return Price
+     * @return self
      */
     public function setToPay($toPay)
     {
@@ -103,7 +103,7 @@ class Price
      *
      * @param \DateTime $createdAt
      *
-     * @return Price
+     * @return self
      */
     public function setCreatedAt($createdAt)
     {
@@ -127,7 +127,7 @@ class Price
      *
      * @param \DateTime $updatedAt
      *
-     * @return Price
+     * @return self
      */
     public function setUpdatedAt($updatedAt)
     {
@@ -149,9 +149,9 @@ class Price
     /**
      * Set service
      *
-     * @param \AppBundle\Entity\Service $service
+     * @param Service $service
      *
-     * @return Price
+     * @return self
      */
     public function setService(\AppBundle\Entity\Service $service = null)
     {
@@ -163,7 +163,7 @@ class Price
     /**
      * Get service
      *
-     * @return \AppBundle\Entity\Service
+     * @return Service
      */
     public function getService()
     {
@@ -173,9 +173,9 @@ class Price
     /**
      * Set car
      *
-     * @param \AppBundle\Entity\Car $car
+     * @param Car $car
      *
-     * @return Price
+     * @return self
      */
     public function setCar(\AppBundle\Entity\Car $car = null)
     {
@@ -187,7 +187,7 @@ class Price
     /**
      * Get car
      *
-     * @return \AppBundle\Entity\Car
+     * @return Car
      */
     public function getCar()
     {

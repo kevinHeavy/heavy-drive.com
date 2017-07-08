@@ -83,7 +83,7 @@ class Service
      *
      * @param string $name
      *
-     * @return Service
+     * @return self
      */
     public function setName($name)
     {
@@ -107,7 +107,7 @@ class Service
      *
      * @param boolean $enabled
      *
-     * @return Service
+     * @return self
      */
     public function setEnabled($enabled)
     {
@@ -131,7 +131,7 @@ class Service
      *
      * @param \DateTime $createdAt
      *
-     * @return Service
+     * @return self
      */
     public function setCreatedAt($createdAt)
     {
@@ -155,7 +155,7 @@ class Service
      *
      * @param \DateTime $updatedAt
      *
-     * @return Service
+     * @return self
      */
     public function setUpdatedAt($updatedAt)
     {
@@ -179,7 +179,7 @@ class Service
      *
      * @param string $description
      *
-     * @return Service
+     * @return self
      */
     public function setDescription($description)
     {
@@ -201,9 +201,9 @@ class Service
     /**
      * Set agency
      *
-     * @param \AppBundle\Entity\Agency $agency
+     * @param Agency $agency
      *
-     * @return Service
+     * @return self
      */
     public function setAgency(\AppBundle\Entity\Agency $agency = null)
     {
@@ -215,7 +215,7 @@ class Service
     /**
      * Get agency
      *
-     * @return \AppBundle\Entity\Agency
+     * @return Agency
      */
     public function getAgency()
     {

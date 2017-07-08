@@ -19,70 +19,70 @@ class PickUpCenter
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    protected $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255, nullable=false)
      */
-    private $name;
+    protected $name;
 
     /**
      * @var string
      *
      * @ORM\Column(name="address", type="string", length=255, nullable=false)
      */
-    private $address;
+    protected $address;
 
     /**
      * @var string
      *
      * @ORM\Column(name="zip_code", type="string", length=255, nullable=false)
      */
-    private $zipCode;
+    protected $zipCode;
 
     /**
      * @var string
      *
      * @ORM\Column(name="city", type="string", length=255, nullable=false)
      */
-    private $city;
+    protected $city;
 
     /**
      * @var string
      *
      * @ORM\Column(name="full_name", type="string", length=255, nullable=false)
      */
-    private $fullName;
+    protected $fullName;
 
     /**
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255, nullable=false)
      */
-    private $email;
+    protected $email;
 
     /**
      * @var string
      *
      * @ORM\Column(name="phone", type="string", length=255, nullable=false)
      */
-    private $phone;
+    protected $phone;
 
     /**
      * @var string
      *
      * @ORM\Column(name="opening_hours", type="text", nullable=false)
      */
-    private $openingHours;
+    protected $openingHours;
 
     /**
      * @var boolean
      *
      * @ORM\Column(name="enabled", type="boolean", nullable=false)
      */
-    private $enabled;
+    protected $enabled;
 
 
 
@@ -101,7 +101,7 @@ class PickUpCenter
      *
      * @param string $name
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setName($name)
     {
@@ -125,7 +125,7 @@ class PickUpCenter
      *
      * @param string $address
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setAddress($address)
     {
@@ -149,7 +149,7 @@ class PickUpCenter
      *
      * @param string $zipCode
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setZipCode($zipCode)
     {
@@ -173,7 +173,7 @@ class PickUpCenter
      *
      * @param string $city
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setCity($city)
     {
@@ -197,7 +197,7 @@ class PickUpCenter
      *
      * @param string $fullName
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setFullName($fullName)
     {
@@ -221,7 +221,7 @@ class PickUpCenter
      *
      * @param string $email
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setEmail($email)
     {
@@ -245,7 +245,7 @@ class PickUpCenter
      *
      * @param string $phone
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setPhone($phone)
     {
@@ -269,7 +269,7 @@ class PickUpCenter
      *
      * @param string $openingHours
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setOpeningHours($openingHours)
     {
@@ -293,7 +293,7 @@ class PickUpCenter
      *
      * @param boolean $enabled
      *
-     * @return PickUpCenter
+     * @return self
      */
     public function setEnabled($enabled)
     {

@@ -19,63 +19,63 @@ class Partnair
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    protected $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255, nullable=false)
      */
-    private $name;
+    protected $name;
 
     /**
      * @var string
      *
      * @ORM\Column(name="address", type="string", length=255, nullable=false)
      */
-    private $address;
+    protected $address;
 
     /**
      * @var string
      *
      * @ORM\Column(name="zip_code", type="string", length=255, nullable=false)
      */
-    private $zipCode;
+    protected $zipCode;
 
     /**
      * @var string
      *
      * @ORM\Column(name="city", type="string", length=255, nullable=false)
      */
-    private $city;
+    protected $city;
 
     /**
      * @var string
      *
      * @ORM\Column(name="full_name", type="string", length=255, nullable=false)
      */
-    private $fullName;
+    protected $fullName;
 
     /**
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255, nullable=false)
      */
-    private $email;
+    protected $email;
 
     /**
      * @var string
      *
      * @ORM\Column(name="phone", type="string", length=255, nullable=false)
      */
-    private $phone;
+    protected $phone;
 
     /**
      * @var boolean
      *
      * @ORM\Column(name="enabled", type="boolean", nullable=false)
      */
-    private $enabled;
+    protected $enabled;
 
     /**
      * @var \Agency
@@ -85,7 +85,7 @@ class Partnair
      *   @ORM\JoinColumn(name="agency_id", referencedColumnName="id")
      * })
      */
-    private $agency;
+    protected $agency;
 
 
 
@@ -104,7 +104,7 @@ class Partnair
      *
      * @param string $name
      *
-     * @return Partnair
+     * @return self
      */
     public function setName($name)
     {
@@ -128,7 +128,7 @@ class Partnair
      *
      * @param string $address
      *
-     * @return Partnair
+     * @return self
      */
     public function setAddress($address)
     {
@@ -152,7 +152,7 @@ class Partnair
      *
      * @param string $zipCode
      *
-     * @return Partnair
+     * @return self
      */
     public function setZipCode($zipCode)
     {
@@ -176,7 +176,7 @@ class Partnair
      *
      * @param string $city
      *
-     * @return Partnair
+     * @return self
      */
     public function setCity($city)
     {
@@ -200,7 +200,7 @@ class Partnair
      *
      * @param string $fullName
      *
-     * @return Partnair
+     * @return self
      */
     public function setFullName($fullName)
     {
@@ -224,7 +224,7 @@ class Partnair
      *
      * @param string $email
      *
-     * @return Partnair
+     * @return self
      */
     public function setEmail($email)
     {
@@ -248,7 +248,7 @@ class Partnair
      *
      * @param string $phone
      *
-     * @return Partnair
+     * @return self
      */
     public function setPhone($phone)
     {
@@ -272,7 +272,7 @@ class Partnair
      *
      * @param boolean $enabled
      *
-     * @return Partnair
+     * @return self
      */
     public function setEnabled($enabled)
     {
@@ -294,9 +294,9 @@ class Partnair
     /**
      * Set agency
      *
-     * @param \AppBundle\Entity\Agency $agency
+     * @param Agency $agency
      *
-     * @return Partnair
+     * @return self
      */
     public function setAgency(\AppBundle\Entity\Agency $agency = null)
     {
@@ -308,7 +308,7 @@ class Partnair
     /**
      * Get agency
      *
-     * @return \AppBundle\Entity\Agency
+     * @return Agency
      */
     public function getAgency()
     {
