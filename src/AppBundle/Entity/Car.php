@@ -265,7 +265,7 @@ class Car
      *
      * @param string $uuid
      *
-     * @return Car
+     * @return self
      */
     public function setUuid($uuid)
     {
@@ -289,7 +289,7 @@ class Car
      *
      * @param string $registration
      *
-     * @return Car
+     * @return self
      */
     public function setRegistration($registration)
     {
@@ -313,7 +313,7 @@ class Car
      *
      * @param \DateTime $firstRegistrationAt
      *
-     * @return Car
+     * @return self
      */
     public function setFirstRegistrationAt($firstRegistrationAt)
     {
@@ -337,7 +337,7 @@ class Car
      *
      * @param integer $status
      *
-     * @return Car
+     * @return self
      */
     public function setStatus($status)
     {
@@ -361,7 +361,7 @@ class Car
      *
      * @param integer $pickUpStatus
      *
-     * @return Car
+     * @return self
      */
     public function setPickUpStatus($pickUpStatus)
     {
@@ -385,7 +385,7 @@ class Car
      *
      * @param \DateTime $pickUpDoneAt
      *
-     * @return Car
+     * @return self
      */
     public function setPickUpDoneAt($pickUpDoneAt)
     {
@@ -409,7 +409,7 @@ class Car
      *
      * @param integer $vehicleType
      *
-     * @return Car
+     * @return self
      */
     public function setVehicleType($vehicleType)
     {
@@ -433,7 +433,7 @@ class Car
      *
      * @param integer $vehicleEnergyType
      *
-     * @return Car
+     * @return self
      */
     public function setVehicleEnergyType($vehicleEnergyType)
     {
@@ -457,7 +457,7 @@ class Car
      *
      * @param string $vehicleMaker
      *
-     * @return Car
+     * @return self
      */
     public function setVehicleMaker($vehicleMaker)
     {
@@ -481,7 +481,7 @@ class Car
      *
      * @param string $vehicleCnit
      *
-     * @return Car
+     * @return self
      */
     public function setVehicleCnit($vehicleCnit)
     {
@@ -505,7 +505,7 @@ class Car
      *
      * @param string $vehicleModel
      *
-     * @return Car
+     * @return self
      */
     public function setVehicleModel($vehicleModel)
     {
@@ -529,7 +529,7 @@ class Car
      *
      * @param string $vehicleModelVariant
      *
-     * @return Car
+     * @return self
      */
     public function setVehicleModelVariant($vehicleModelVariant)
     {
@@ -553,7 +553,7 @@ class Car
      *
      * @param string $vehicleEngine
      *
-     * @return Car
+     * @return self
      */
     public function setVehicleEngine($vehicleEngine)
     {
@@ -577,7 +577,7 @@ class Car
      *
      * @param boolean $firstHand
      *
-     * @return Car
+     * @return self
      */
     public function setFirstHand($firstHand)
     {
@@ -601,7 +601,7 @@ class Car
      *
      * @param boolean $duplicateKeys
      *
-     * @return Car
+     * @return self
      */
     public function setDuplicateKeys($duplicateKeys)
     {
@@ -625,7 +625,7 @@ class Car
      *
      * @param string $interiorColor
      *
-     * @return Car
+     * @return self
      */
     public function setInteriorColor($interiorColor)
     {
@@ -649,7 +649,7 @@ class Car
      *
      * @param string $exteriorColor
      *
-     * @return Car
+     * @return self
      */
     public function setExteriorColor($exteriorColor)
     {
@@ -673,7 +673,7 @@ class Car
      *
      * @param integer $passengerCapacity
      *
-     * @return Car
+     * @return self
      */
     public function setPassengerCapacity($passengerCapacity)
     {
@@ -697,7 +697,7 @@ class Car
      *
      * @param integer $doors
      *
-     * @return Car
+     * @return self
      */
     public function setDoors($doors)
     {
@@ -721,7 +721,7 @@ class Car
      *
      * @param string $transmission
      *
-     * @return Car
+     * @return self
      */
     public function setTransmission($transmission)
     {
@@ -745,7 +745,7 @@ class Car
      *
      * @param integer $mileageReal
      *
-     * @return Car
+     * @return self
      */
     public function setMileageReal($mileageReal)
     {
@@ -793,7 +793,7 @@ class Car
      *
      * @param integer $lastMaintenanceMileage
      *
-     * @return Car
+     * @return self
      */
     public function setLastMaintenanceMileage($lastMaintenanceMileage)
     {
@@ -817,7 +817,7 @@ class Car
      *
      * @param boolean $chassisJig
      *
-     * @return Car
+     * @return self
      */
     public function setChassisJig($chassisJig)
     {
@@ -841,7 +841,7 @@ class Car
      *
      * @param boolean $repainted
      *
-     * @return Car
+     * @return self
      */
     public function setRepainted($repainted)
     {
@@ -865,7 +865,7 @@ class Car
      *
      * @param array $options
      *
-     * @return Car
+     * @return self
      */
     public function setOptions($options)
     {
@@ -889,7 +889,7 @@ class Car
      *
      * @param array $pictures
      *
-     * @return Car
+     * @return self
      */
     public function setPictures($pictures)
     {
@@ -913,7 +913,7 @@ class Car
      *
      * @param \DateTime $createdAt
      *
-     * @return Car
+     * @return self
      */
     public function setCreatedAt($createdAt)
     {
@@ -937,7 +937,7 @@ class Car
      *
      * @param \DateTime $updatedAt
      *
-     * @return Car
+     * @return self
      */
     public function setUpdatedAt($updatedAt)
     {
@@ -961,7 +961,7 @@ class Car
      *
      * @param string $comments
      *
-     * @return Car
+     * @return self
      */
     public function setComments($comments)
     {
@@ -985,7 +985,7 @@ class Car
      *
      * @param boolean $enabled
      *
-     * @return Car
+     * @return self
      */
     public function setEnabled($enabled)
     {
@@ -1007,9 +1007,9 @@ class Car
     /**
      * Set pickUpOrigin
      *
-     * @param \AppBundle\Entity\PickUpCenter $pickUpOrigin
+     * @param PickUpCenter $pickUpOrigin
      *
-     * @return Car
+     * @return self
      */
     public function setPickUpOrigin(\AppBundle\Entity\PickUpCenter $pickUpOrigin = null)
     {
@@ -1021,7 +1021,7 @@ class Car
     /**
      * Get pickUpOrigin
      *
-     * @return \AppBundle\Entity\PickUpCenter
+     * @return PickUpCenter
      */
     public function getPickUpOrigin()
     {

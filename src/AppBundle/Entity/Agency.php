@@ -104,7 +104,7 @@ class Agency
      *
      * @param string $name
      *
-     * @return Agency
+     * @return self
      */
     public function setName($name)
     {
@@ -128,7 +128,7 @@ class Agency
      *
      * @param string $siret
      *
-     * @return Agency
+     * @return self
      */
     public function setSiret($siret)
     {
@@ -152,7 +152,7 @@ class Agency
      *
      * @param string $tvaNumber
      *
-     * @return Agency
+     * @return self
      */
     public function setTvaNumber($tvaNumber)
     {
@@ -176,7 +176,7 @@ class Agency
      *
      * @param string $billingAddress
      *
-     * @return Agency
+     * @return self
      */
     public function setBillingAddress($billingAddress)
     {
@@ -200,7 +200,7 @@ class Agency
      *
      * @param string $billingZipCode
      *
-     * @return Agency
+     * @return self
      */
     public function setBillingZipCode($billingZipCode)
     {
@@ -224,7 +224,7 @@ class Agency
      *
      * @param string $billingCity
      *
-     * @return Agency
+     * @return self
      */
     public function setBillingCity($billingCity)
     {
@@ -248,7 +248,7 @@ class Agency
      *
      * @param string $billingCountry
      *
-     * @return Agency
+     * @return self
      */
     public function setBillingCountry($billingCountry)
     {
@@ -272,7 +272,7 @@ class Agency
      *
      * @param boolean $enabled
      *
-     * @return Agency
+     * @return self
      */
     public function setEnabled($enabled)
     {
@@ -294,9 +294,9 @@ class Agency
     /**
      * Set pickUpAgency
      *
-     * @param \AppBundle\Entity\PickUpCenter $pickUpAgency
+     * @param PickUpCenter $pickUpAgency
      *
-     * @return Agency
+     * @return self
      */
     public function setPickUpAgency(\AppBundle\Entity\PickUpCenter $pickUpAgency = null)
     {
@@ -308,7 +308,7 @@ class Agency
     /**
      * Get pickUpAgency
      *
-     * @return \AppBundle\Entity\PickUpCenter
+     * @return PickUpCenter
      */
     public function getPickUpAgency()
     {
