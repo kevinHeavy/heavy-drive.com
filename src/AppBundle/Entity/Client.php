@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="Client")
+ * @ORM\Table(name="client")
  */
 class Client extends BaseUser
 {
@@ -30,7 +30,7 @@ class Client extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="usernameCanonical", type="string", length=255, nullable=true)
+     * @ORM\Column(name="username_canonical", type="string", length=255, nullable=true)
      */
     protected $usernameCanonical;
 
@@ -44,7 +44,7 @@ class Client extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="emailCanonical", type="string", length=255, nullable=true)
+     * @ORM\Column(name="email_canonical", type="string", length=255, nullable=true)
      */
     protected $emailCanonical;
 
@@ -78,14 +78,14 @@ class Client extends BaseUser
      *
      * @var string
      *
-     * @ORM\Column(name="plainPassword", type="string", length=255, nullable=false)
+     * @ORM\Column(name="plain_password", type="string", length=255, nullable=true)
      */
     protected $plainPassword;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="firstName", type="string", length=255, nullable=false)
+     * @ORM\Column(name="first_name", type="string", length=255, nullable=false)
      */
 
     protected $firstName;
@@ -93,7 +93,7 @@ class Client extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="lastName", type="string", length=255, nullable=false)
+     * @ORM\Column(name="last_name", type="string", length=255, nullable=false)
      */
 
     protected $lastName;
@@ -109,7 +109,7 @@ class Client extends BaseUser
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="lastLogin", type="datetime", nullable=true)
+     * @ORM\Column(name="last_login", type="datetime", nullable=true)
      */
     protected $lastLogin;
 
@@ -118,21 +118,21 @@ class Client extends BaseUser
      *
      * @var string
      *
-     * @ORM\Column(name="confirmationToken", type="string", length=255, nullable=true)
+     * @ORM\Column(name="confirmation_token", type="string", length=255, nullable=true)
      */
     protected $confirmationToken;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="passwordRequestedAt", type="datetime", nullable=true)
+     * @ORM\Column(name="password_requested_at", type="datetime", nullable=true)
      */
     protected $passwordRequestedAt;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lastLogin", type="json_array", nullable=true)
+     * @ORM\Column(name="groups", type="json_array", nullable=true)
      */
     protected $groups;
 
@@ -153,7 +153,7 @@ class Client extends BaseUser
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="expiresAt", type="datetime", nullable=true)
+     * @ORM\Column(name="expired_at", type="datetime", nullable=true)
      */
     protected $expiresAt;
 
@@ -167,14 +167,14 @@ class Client extends BaseUser
     /**
      * @var boolean
      *
-     * @ORM\Column(name="credentialsExpired", type="boolean", nullable=false)
+     * @ORM\Column(name="credentials_expired", type="boolean", nullable=false)
      */
     protected $credentialsExpired;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="credentialsExpireAt", type="datetime", nullable=true)
+     * @ORM\Column(name="credentials_expire_at", type="datetime", nullable=true)
      */
     protected $credentialsExpireAt;
 
