@@ -248,8 +248,6 @@ class Car
      */
     private $pickUpOrigin;
 
-
-
     /**
      * Get id
      *
