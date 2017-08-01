@@ -85,4 +85,206 @@ class Note
      */
     protected $updatedAt;
 
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set carNote
+     *
+     * @param integer $carNote
+     *
+     * @return Note
+     */
+    public function setCarNote($carNote)
+    {
+        $this->carNote = $carNote;
+
+        return $this;
+    }
+
+    /**
+     * Get carNote
+     *
+     * @return integer
+     */
+    public function getCarNote()
+    {
+        return $this->carNote;
+    }
+
+    /**
+     * Set serviceNote
+     *
+     * @param integer $serviceNote
+     *
+     * @return Note
+     */
+    public function setServiceNote($serviceNote)
+    {
+        $this->serviceNote = $serviceNote;
+
+        return $this;
+    }
+
+    /**
+     * Get serviceNote
+     *
+     * @return integer
+     */
+    public function getServiceNote()
+    {
+        return $this->serviceNote;
+    }
+
+    /**
+     * Set carComment
+     *
+     * @param string $carComment
+     *
+     * @return Note
+     */
+    public function setCarComment($carComment)
+    {
+        $this->carComment = $carComment;
+
+        return $this;
+    }
+
+    /**
+     * Get carComment
+     *
+     * @return string
+     */
+    public function getCarComment()
+    {
+        return $this->carComment;
+    }
+
+    /**
+     * Set serviceComment
+     *
+     * @param string $serviceComment
+     *
+     * @return Note
+     */
+    public function setServiceComment($serviceComment)
+    {
+        $this->serviceComment = $serviceComment;
+
+        return $this;
+    }
+
+    /**
+     * Get serviceComment
+     *
+     * @return string
+     */
+    public function getServiceComment()
+    {
+        return $this->serviceComment;
+    }
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Note
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * Set updatedAt
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Note
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set client
+     *
+     * @param \AppBundle\Entity\Client $client
+     *
+     * @return Note
+     */
+    public function setClient(\AppBundle\Entity\Client $client = null)
+    {
+        $this->client = $client;
+
+        return $this;
+    }
+
+    /**
+     * Get client
+     *
+     * @return \AppBundle\Entity\Client
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
+
+    /**
+     * Set reservation
+     *
+     * @param \AppBundle\Entity\Reservation $reservation
+     *
+     * @return Note
+     */
+    public function setReservation(\AppBundle\Entity\Reservation $reservation = null)
+    {
+        $this->reservation = $reservation;
+
+        return $this;
+    }
+
+    /**
+     * Get reservation
+     *
+     * @return \AppBundle\Entity\Reservation
+     */
+    public function getReservation()
+    {
+        return $this->reservation;
+    }
 }

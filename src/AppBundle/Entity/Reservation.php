@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Reservation
  *
- * @ORM\Table(name="reservation", indexes={@ORM\Index(name="FK_773DE69D4D42DB17D", columns={"client_id"}), @ORM\Index(name="FK_773DE69D4D42DB18D", columns={"reservation_id"})})
+ * @ORM\Table(name="reservation", indexes={@ORM\Index(name="FK_773DE69D4D42DB17D", columns={"client_id"})})
  * @ORM\Entity
  */
 class Reservation

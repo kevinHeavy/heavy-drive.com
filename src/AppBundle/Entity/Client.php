@@ -107,6 +107,30 @@ class Client extends BaseUser
     protected $telephone;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="address", type="string", length=255, nullable=false)
+     *
+     */
+    protected $address;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="city", type="string", length=255, nullable=false)
+     *
+     */
+    protected $city;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="zip_code", type="integer", length=10, nullable=false)
+     *
+     */
+    protected $zipCode;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="last_login", type="datetime", nullable=true)
@@ -442,6 +466,54 @@ class Client extends BaseUser
         $this->lastName = $lastName;
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAddress()
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param string $address
+     */
+    public function setAddress($address)
+    {
+        $this->address = $address;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param string $city
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+    }
+
+    /**
+     * @return int
+     */
+    public function getZipCode()
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * @param int $zipCode
+     */
+    public function setZipCode($zipCode)
+    {
+        $this->zipCode = $zipCode;
     }
 
     /**
