@@ -27,16 +27,22 @@ heavy:
         description: Créer votre compte Heavy-Drive!
         firstname: Prénom*
         lastname: Nom*
+        username : Nom d'utilisateur*
         gender: Sexe*
         male: Masculin
         female: Féminin
         city: Ville*
+        address: Adresse*
         mail: Adresse mail*
         mailexample: Example: john.smith@gmail.com
         password: Mot de passe*
         writepassword: Saississez le mot de passe
         rewritepassword: Confirmez le mot de passe
         signup: S'inscrire
+        mobile: Téléphone*
+        zipCode: Code postale
+        confirmed: Félicitations, votre compte est maintenant activé. Vous pouvez dés à présent réaliser vos réservations
+
     connection:
         description: Connectez-vous à votre compte Heavy-Drive!
         mail: Adresse Mail
